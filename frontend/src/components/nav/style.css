@@ -1,0 +1,19 @@
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.collapse{
+    justify-content: space-between;
+}
+.navbar{
+   padding: 15px;
+}
+.form-control{
+    border-radius: 0;
+    width: 200%;
+}
+.btn{
+    border-radius: 0;
+    width: 70%;
+}

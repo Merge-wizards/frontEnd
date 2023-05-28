@@ -1,0 +1,17 @@
+.Row{
+    width: 20%;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+.text{
+    margin: 20px;
+}
+/* .btn{
+   display: flex;
+   position: relative;
+   .btn2{
+       position: absolute;
+       right: 0;
+       top: 10px;
+   }
+} */
