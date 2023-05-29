@@ -1,18 +1,18 @@
 
 import './App.css';
-import Browser from './components/browser/Browser';
+import Router from './components/router/Route';
 import Footer from './components/footer/Footer';
 import Hero from './components/hero/Hero'
 import Navbar from './components/nav/Navbar'
-import PcCard from './components/pc/PcCard';
-
+import FavList from './components/favList/favList';
 function App() {
+
   return (
     <>
     <Navbar/>
     <Hero/>
-    <PcCard/>
-    <Browser/>
+    <Router/>
+    {/* <FavList/> */}
     <Footer/>
     </>
   );
