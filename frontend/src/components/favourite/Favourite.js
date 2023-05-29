@@ -1,43 +1,56 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 function Favourite() {
     const [data, setData] = useState([]);
-    const getFav = () => (
-        axios.get(`${process.env.REACT_APP_URL}/fav`).then(res => setData(res.data)).catch(err => console.log(err))
-    )
-    const deleteFav = () => {
-        data.map(item => {
-            axios.delete(`${process.env.REACT_APP_URL}/delete/${item.id}`).then(res => console.log(res.data)).catch(err => console.log(err))
-        })
-    }
+    const [refreshCall, setRefreshCall] = useState(false);
+    const getFav = async () => {
+        try {
+            const result = await axios.get(`${process.env.REACT_APP_URL}/fav`);
+            setData(result.data);
+        } catch (err) {
+            console.log(err);
+        }
+    };
+    const deleteFav = async (id) => {
+        try {
+            await axios.delete(`${process.env.REACT_APP_URL}/delete/${id}`);
+            console.log("Item deleted");
+            setRefreshCall(!refreshCall);
+        } catch (err) {
+            console.error(err);
+        }
+    };
     // deleteFav()
     useEffect(() => {
-        getFav([])
-    }, []);
+        getFav([]);
+    }, [refreshCall]);
     // console.log("this is data",data);
     return (
-        <div className='c-d'>
-            {
-                data.length &&
-                data.map(item => {
+        <div className="row">
+            {data.length &&
+                data.map((item) => {
                     return (
-                        <>
-                            <img src={item.thumbnail} className='c-image' />
-                            <div className='column'>
+                        <div key={item.id} className="col-4">
+                            <img src={item.thumbnail} className="c-image" />
+                            <div className="column">
                                 <h2>Title : {item.title}</h2>
-                                <p><h3>short description :  </h3>{item.short_description}</p>
+                                <h3>short description : </h3>
+                                <p>{item.short_description}</p>
                             </div>
-                            <button onClick={deleteFav}>delete</button>
-                        </>
-
-                    )
-
-                })
-            }
-
+                            <div className="btns d-flex justify-content-center">
+                                <button
+                                    className="btn btn-danger "
+                                    onClick={() => deleteFav(item.id)}
+                                >
+                                    delete
+                                </button>
+                            </div>
+                        </div>
+                    );
+                })}
         </div>
-    )
+    );
 }
 
-export default Favourite
+export default Favourite;
