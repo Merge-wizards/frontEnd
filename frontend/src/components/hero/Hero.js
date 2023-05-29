@@ -28,20 +28,18 @@ const Hero = () => {
     return (
         <section className="section">
             <MDBCarousel showIndicators showControls fade>
-                <div className="img1">
-                    <MDBCarouselItem
-                        className="w-100 d-block hero"
-                        itemId={1}
-                        src={img}
-                        alt="..."
-                    >
-                        <h5>First slide label</h5>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis
-                            interdum.
-                        </p>
-                    </MDBCarouselItem>
-                </div>
+                <MDBCarouselItem
+                    className="w-100 d-block hero"
+                    itemId={1}
+                    src={img}
+                    alt="..."
+                >
+                    <h5>First slide label</h5>
+                    <p>
+                        Nulla vitae elit libero, a pharetra augue mollis
+                        interdum.
+                    </p>
+                </MDBCarouselItem>
 
                 <MDBCarouselItem
                     className="w-100 d-block hero"

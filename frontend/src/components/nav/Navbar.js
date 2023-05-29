@@ -23,9 +23,9 @@ function Navbar({ games }) {
 
     return (
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
                 Merge Wizards
-            </a>
+            </Link>
             <button
                 className="navbar-toggler"
                 type="button"
