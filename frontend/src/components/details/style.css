@@ -1,0 +1,19 @@
+.c-d{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    background-color:black
+}
+.c-image{
+    width: 25%;
+    height: 400px;
+    padding: 10px;
+}
+.column{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
