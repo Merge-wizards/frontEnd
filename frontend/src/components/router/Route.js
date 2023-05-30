@@ -8,7 +8,7 @@ import Feedback from "react-bootstrap/esm/Feedback";
 import Navbar from "../nav/Navbar";
 import Footer from "../footer/Footer";
 import Home from "../Home/Home";
-
+import Team from "../Team/Team";
 function Router() {
     const [data, setData] = useState([]);
     const [Brdata, setBrData] = useState([]);
@@ -43,6 +43,7 @@ function Router() {
 
             <Routes>
                 <Route path="/feedback" element={<Feedback />} />
+                <Route path="/about-us" element={<Team />} />
                 <Route path="/favourite" element={<Favourite />} />
                 <Route
                     path="/"

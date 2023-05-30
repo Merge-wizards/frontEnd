@@ -1,12 +1,33 @@
 .Row {
-    gap: 275px;
     width: 9%;
     flex-wrap: nowrap;
     padding: 20px;
 }
 
-.text{
+.text {
     margin: 20px;
+}
+.relative {
+    position: relative;
+}
+.shapes {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 70px;
+}
+
+.shapes button {
+    width: 40px;
+    height: 50px;
+    background-color: #0a0509af;
+}
+
+.shapes button svg {
+    filter: invert(1);
+}
+.container {
+    max-width: 100% !important;
 }
 /* .btn{
    display: flex;
@@ -17,3 +38,17 @@
        top: 10px;
    }
 } */
+
+.games {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+// .footer {
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+// }
+.team-card:last-child {
+    margin-bottom: 100px;
+}

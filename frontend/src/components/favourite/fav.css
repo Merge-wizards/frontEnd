@@ -1,0 +1,23 @@
+.big-div {
+    min-height: 100vh;
+}
+.card-body h2 {
+    color: black;
+}
+.card-body p {
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+
+.card {
+    height: 475px;
+    margin: 20px;
+    border: solid 2px black;
+    border-radius: 0px 0px 30px 30px;
+    filter: drop-shadow(0px 7px 1px grey);
+}
+
+.card img {
+    border-radius: 0px 0px 30px 30px;
+    filter: drop-shadow(0px 7px 1px grey);
+}
