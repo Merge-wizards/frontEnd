@@ -20,4 +20,10 @@
 
 .btn svg {
     size: 25%;
+ }
+
+#dropdown-basic{
+    background-color:transparent;
+    width: 100%;
+    border: none;
 }

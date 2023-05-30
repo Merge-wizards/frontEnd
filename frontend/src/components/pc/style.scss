@@ -7,6 +7,7 @@
 .text {
     margin: 20px;
 }
+
 .relative {
     position: relative;
 }
@@ -29,15 +30,7 @@
 .container {
     max-width: 100% !important;
 }
-/* .btn{
-   display: flex;
-   position: relative;
-   .btn2{
-       position: absolute;
-       right: 0;
-       top: 10px;
-   }
-} */
+
 
 .games {
     margin-top: 30px;
@@ -52,3 +45,4 @@
 .team-card:last-child {
     margin-bottom: 100px;
 }
+

@@ -9,6 +9,11 @@ import Navbar from "../nav/Navbar";
 import Footer from "../footer/Footer";
 import Home from "../Home/Home";
 import Team from "../Team/Team";
+
+import Category from "../category/Category";
+import Platform from '../plateform/Platform'
+import { Row } from "react-bootstrap";
+
 function Router() {
     const [data, setData] = useState([]);
     const [Brdata, setBrData] = useState([]);
@@ -37,11 +42,16 @@ function Router() {
         fetchdata();
         dataBr();
     }, []);
+
+    const [filterd, setFilterd] = useState([]);
     return (
         <div>
-            <Navbar games={[...data, ...Brdata]} />
+            <Navbar games={[...data, ...Brdata]} setFilterd={setFilterd} filterd={filterd} />
 
             <Routes>
+                <Route path="/category" element={filterd.length && <Category filterd={filterd} />} />
+                {/* <Route path="/plate" element={filterd.length && <Platform filterd={filterd} />} /> */}
+                <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/favourite" element={<Favourite />} />
@@ -58,7 +68,7 @@ function Router() {
             </Routes>
 
             {/* <FavList/> */}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

@@ -3,7 +3,10 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function Navbar({ games }) {
+
+import Dropdown from 'react-bootstrap/Dropdown';
+function Navbar({ games, setFilterd, filterd }) {
+
     const navigate = useNavigate();
     const [searchResult, setSearchResult] = useState([]);
 
@@ -21,7 +24,9 @@ function Navbar({ games }) {
             navigate(`/details/${searchResult[0].id}`);
         }
     };
-
+    const selectCategory = (eventKey) => {
+        setFilterd(eventKey)
+    }
     return (
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <Link className="navbar-brand" to="/">
@@ -59,39 +64,34 @@ function Navbar({ games }) {
                             About us
                         </Link>
                     </li>
-                    {/* <li className="nav-item dropdown">
-                        <a
-                            className="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >
-                            Dropdown
-                        </a>
-                        <div
-                            className="dropdown-menu"
-                            aria-labelledby="navbarDropdown"
-                        >
-                            <a className="dropdown-item" href="#">
-                                Action
-                            </a>
-                            <a className="dropdown-item" href="#">
-                                Another action
-                            </a>
-                            <div className="dropdown-divider"></div>
-                            <a className="dropdown-item" href="#">
-                                Something else here
-                            </a>
-                        </div>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">
-                            Disabled
-                        </a>
-                    </li> */}
+                    <Dropdown className="nav-item" onSelect={selectCategory}>
+                        <Dropdown.Toggle className="nav-link" id="dropdown-basic">
+                            Category
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item eventKey='action' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>Action</Link></Dropdown.Item>
+                            <Dropdown.Item eventKey='shooter'><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>shooter</Link></Dropdown.Item>
+                            <Dropdown.Item eventKey='Sports' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>Sport</Link></Dropdown.Item>
+                            <Dropdown.Item eventKey='survival'><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>survival</Link></Dropdown.Item>
+
+                            <Dropdown.Item eventKey='racing' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>racing</Link></Dropdown.Item>
+
+
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    {/* <Dropdown className="nav-item" onSelect={selectCategory}>
+                        <Dropdown.Toggle className="nav-link" id="dropdown-basic">
+                            Plateform
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item eventKey='pc'><Link to='/plate' style={{ textDecoration: 'none', color: 'black' }}>Pc</Link></Dropdown.Item>
+                            <Dropdown.Item eventKey='browser'><Link to='/plate' style={{ textDecoration: 'none', color: 'black' }}>broswer</Link></Dropdown.Item>
+
+                        </Dropdown.Menu>
+                    </Dropdown> */}
+
                 </ul>
 
                 <form

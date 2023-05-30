@@ -48,23 +48,30 @@ const PcCard = ({ data }) => {
                                 </div>
                             );
                         })}
-                    {hasData && (
-                        <div className="btn w-100 shapes">
-                            <button
-                                onClick={() => handleClick("prev")}
-                                disabled={currentIndex === 0}
-                            >
-                                <GrLinkPrevious />
-                            </button>
-                            {showNextButton && (
-                                <button
-                                    onClick={() => handleClick("next")}
-                                    disabled={currentIndex === 4}
-                                >
-                                    <GrLinkNext />
-                                </button>
-                            )}
-                        </div>
+
+                </Row>
+            </div>
+            {hasData && (
+                <div className="btn w-100">
+                    <button className="btns"
+                        onClick={() => handleClick("prev")}
+                        disabled={currentIndex === 0}
+                        style={{ border: "0", backgroundColor: "transparent" }}
+                    >
+                        <GrLinkPrevious />
+                    </button>
+                    {showNextButton && (
+                        <button
+                            onClick={() => handleClick("next")}
+                            disabled={currentIndex === 4}
+                            style={{
+                                border: "0",
+                                backgroundColor: "transparent",
+                            }}
+                        >
+                            <GrLinkNext />
+                        </button>
+
                     )}
                 </div>
             </div>
