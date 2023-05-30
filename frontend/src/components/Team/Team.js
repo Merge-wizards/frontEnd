@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 
 import abdullahPhoto from '../../assets/abdullah.jpg';
@@ -232,6 +230,3 @@ const Team = () => {
 };
 
 export default Team;*/
-
-
-

@@ -9,6 +9,7 @@ import Navbar from "../nav/Navbar";
 import Footer from "../footer/Footer";
 import Home from "../Home/Home";
 import Team from "../Team/Team";
+
 import Category from "../category/Category";
 import Platform from '../plateform/Platform'
 import { Row } from "react-bootstrap";
@@ -52,6 +53,7 @@ function Router() {
                 {/* <Route path="/plate" element={filterd.length && <Platform filterd={filterd} />} /> */}
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
+                <Route path="/about-us" element={<Team />} />
                 <Route path="/favourite" element={<Favourite />} />
                 <Route
                     path="/"

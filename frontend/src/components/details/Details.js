@@ -35,20 +35,23 @@ function Details({ data, dataBr }) {
     };
 
     return (
-        <div className="wrapper">
-            <div className="c-d">
-                <img src={card[0].thumbnail} className="c-image" />
-                <div className="column">
-                    <h2>Title : {card[0].title}</h2>
-                    <h3>short description : </h3>
-                    <p>{card[0].short_description}</p>
+        <div className="wrapper container">
+            <div className="c-d row">
+                <div className="col-3">
+                    <img src={card[0].thumbnail} className="c-image" />
+                </div>
+                <div className="col-9">
+                    <div className="column">
+                        <h2> {card[0].title}</h2>
+                        <p className="wraptext">{card[0].short_description}</p>
 
-                    <button
-                        className="btn btn-success"
-                        onClick={() => fetchFav()}
-                    >
-                        Send To favoutire
-                    </button>
+                        <button
+                            className="btn btn-success"
+                            onClick={() => fetchFav()}
+                        >
+                            Send To favoutire
+                        </button>
+                    </div>
                 </div>
             </div>
             {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
