@@ -3,10 +3,8 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
-import Dropdown from 'react-bootstrap/Dropdown';
-function Navbar({ games, setFilterd, filterd }) {
-
+import Dropdown from "react-bootstrap/Dropdown";
+function Navbar({ games }) {
     const navigate = useNavigate();
     const [searchResult, setSearchResult] = useState([]);
 
@@ -24,9 +22,18 @@ function Navbar({ games, setFilterd, filterd }) {
             navigate(`/details/${searchResult[0].id}`);
         }
     };
-    const selectCategory = (eventKey) => {
-        setFilterd(eventKey)
-    }
+
+    const categoires = [
+        { link: "/category/action", name: "Action" },
+        { link: "/category/shooter", name: "Shooter" },
+        { link: "/category/survival", name: "Survival" },
+        { link: "/category/racing", name: "Racing" },
+    ];
+
+    const platform = [
+        { link: "/plate/pc", name: "Pc" },
+        { link: "/plate/browser", name: "Browser" },
+    ];
     return (
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <Link className="navbar-brand" to="/">
@@ -64,34 +71,46 @@ function Navbar({ games, setFilterd, filterd }) {
                             About us
                         </Link>
                     </li>
-                    <Dropdown className="nav-item" onSelect={selectCategory}>
-                        <Dropdown.Toggle className="nav-link" id="dropdown-basic">
+                    <Dropdown className="nav-item">
+                        <Dropdown.Toggle
+                            className="nav-link"
+                            id="dropdown-basic"
+                        >
                             Category
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item eventKey='action' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>Action</Link></Dropdown.Item>
-                            <Dropdown.Item eventKey='shooter'><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>shooter</Link></Dropdown.Item>
-                            <Dropdown.Item eventKey='Sports' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>Sport</Link></Dropdown.Item>
-                            <Dropdown.Item eventKey='survival'><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>survival</Link></Dropdown.Item>
-
-                            <Dropdown.Item eventKey='racing' ><Link to='/category' style={{ textDecoration: 'none', color: 'black' }}>racing</Link></Dropdown.Item>
-
-
+                            {categoires.map((e, index) => (
+                                <Dropdown.Item
+                                    onClick={() => navigate(e.link)}
+                                    key={index}
+                                    eventKey="action"
+                                >
+                                    {e.name}
+                                </Dropdown.Item>
+                            ))}
                         </Dropdown.Menu>
                     </Dropdown>
-                    {/* <Dropdown className="nav-item" onSelect={selectCategory}>
-                        <Dropdown.Toggle className="nav-link" id="dropdown-basic">
+                    <Dropdown className="nav-item">
+                        <Dropdown.Toggle
+                            className="nav-link"
+                            id="dropdown-basic"
+                        >
                             Plateform
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item eventKey='pc'><Link to='/plate' style={{ textDecoration: 'none', color: 'black' }}>Pc</Link></Dropdown.Item>
-                            <Dropdown.Item eventKey='browser'><Link to='/plate' style={{ textDecoration: 'none', color: 'black' }}>broswer</Link></Dropdown.Item>
-
+                            {platform.map((e, index) => (
+                                <Dropdown.Item
+                                    onClick={() => navigate(e.link)}
+                                    key={index}
+                                    eventKey="action"
+                                >
+                                    {e.name}
+                                </Dropdown.Item>
+                            ))}
                         </Dropdown.Menu>
-                    </Dropdown> */}
-
+                    </Dropdown>
                 </ul>
 
                 <form

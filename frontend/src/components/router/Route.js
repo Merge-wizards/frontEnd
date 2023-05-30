@@ -1,18 +1,14 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Details from "../details/Details";
-import { useEffect, useState } from "react";
 import axios from "axios";
-import Favourite from "../favourite/Favourite";
+import React, { useEffect, useState } from "react";
 import Feedback from "react-bootstrap/esm/Feedback";
-import Navbar from "../nav/Navbar";
-import Footer from "../footer/Footer";
+import { Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import Team from "../Team/Team";
-
+import Details from "../details/Details";
+import Favourite from "../favourite/Favourite";
+import Navbar from "../nav/Navbar";
+import Platform from "../plateform/Platform";
 import Category from "../category/Category";
-import Platform from '../plateform/Platform'
-import { Row } from "react-bootstrap";
 
 function Router() {
     const [data, setData] = useState([]);
@@ -43,14 +39,16 @@ function Router() {
         dataBr();
     }, []);
 
-    const [filterd, setFilterd] = useState([]);
     return (
         <div>
-            <Navbar games={[...data, ...Brdata]} setFilterd={setFilterd} filterd={filterd} />
+            <Navbar games={[...data, ...Brdata]} />
 
             <Routes>
-                <Route path="/category" element={filterd.length && <Category filterd={filterd} />} />
-                {/* <Route path="/plate" element={filterd.length && <Platform filterd={filterd} />} /> */}
+                <Route
+                    path="/category/:selectedCategory"
+                    element={<Category />}
+                />
+                <Route path="/plate/:selectedPlatform" element={<Platform />} />
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
                 <Route path="/about-us" element={<Team />} />
@@ -59,6 +57,7 @@ function Router() {
                     path="/"
                     element={<Home data={data} dataBr={Brdata} />}
                 />
+
                 <Route
                     path="/details/:id"
                     element={

@@ -42,7 +42,7 @@ const Browser = ({ dataBr }) => {
                         .slice(currentIndex, currentIndex + 4)
                         .map((item, index) => {
                             return (
-                                <div className="col-md-3">
+                                <div key={index} className="col-md-3">
                                     <Link
                                         key={item.id}
                                         to={`/details/${item.id}`}

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
-import { GrLinkNext } from "react-icons/gr";
-import { GrLinkPrevious } from "react-icons/gr";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.scss";
+
 const PcCard = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -15,15 +15,13 @@ const PcCard = ({ data }) => {
             setCurrentIndex((nextIndex) => nextIndex + 1);
         }
     };
+
     const hasData = data.length > 0;
     const showNextButton = currentIndex <= data.length - 5;
+
     return (
         <div className="games">
-            <h3>
-                {" "}
-                <strong>Pc Games </strong>
-            </h3>
-
+            <h3>Pc Games</h3>
             <div className="relative container">
                 <div className="row">
                     {data
@@ -31,51 +29,43 @@ const PcCard = ({ data }) => {
                         .slice(currentIndex, currentIndex + 4)
                         .map((item, index) => {
                             return (
-                                <div className="col-md-3">
-                                    <div>
-                                        <Link
-                                            key={item.id}
-                                            to={`/details/${item.id}`}
-                                        >
-                                            <img
-                                                className="img-fluid"
-                                                key={index}
-                                                src={item.thumbnail}
-                                                alt={"Image "}
-                                            />
-                                        </Link>
-                                    </div>
+                                <div key={index} className="col-md-3">
+                                    <Link
+                                        key={item.id}
+                                        to={`/details/${item.id}`}
+                                    >
+                                        <img
+                                            className="img-fluid"
+                                            key={index}
+                                            src={item.thumbnail}
+                                            alt={"Image "}
+                                        />
+                                    </Link>
                                 </div>
                             );
                         })}
-
-                </Row>
-            </div>
-            {hasData && (
-                <div className="btn w-100">
-                    <button className="btns"
-                        onClick={() => handleClick("prev")}
-                        disabled={currentIndex === 0}
-                        style={{ border: "0", backgroundColor: "transparent" }}
-                    >
-                        <GrLinkPrevious />
-                    </button>
-                    {showNextButton && (
-                        <button
-                            onClick={() => handleClick("next")}
-                            disabled={currentIndex === 4}
-                            style={{
-                                border: "0",
-                                backgroundColor: "transparent",
-                            }}
-                        >
-                            <GrLinkNext />
-                        </button>
-
+                    {hasData && (
+                        <div className="btn w-100 shapes">
+                            <button
+                                onClick={() => handleClick("prev")}
+                                disabled={currentIndex === 0}
+                            >
+                                <GrLinkPrevious />
+                            </button>
+                            {showNextButton && (
+                                <button
+                                    onClick={() => handleClick("next")}
+                                    disabled={currentIndex === 4}
+                                >
+                                    <GrLinkNext />
+                                </button>
+                            )}
+                        </div>
                     )}
                 </div>
             </div>
         </div>
     );
 };
+
 export default PcCard;
