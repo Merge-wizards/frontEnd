@@ -60,7 +60,6 @@ function Details({ data, dataBr }) {
                 </div>
                 {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
             </div>
-            <Footer />
         </>
     );
 }

@@ -9,7 +9,7 @@ import Favourite from "../favourite/Favourite";
 import Navbar from "../nav/Navbar";
 import Platform from "../plateform/Platform";
 import Category from "../category/Category";
-
+import Footer from "../footer/Footer";
 function Router() {
     const [data, setData] = useState([]);
     const [Brdata, setBrData] = useState([]);
@@ -67,7 +67,7 @@ function Router() {
             </Routes>
 
             {/* <FavList/> */}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
