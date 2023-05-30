@@ -2,22 +2,22 @@ import Browser from "../browser/Browser";
 import Hero from "../hero/Hero";
 import PcCard from "../pc/PcCard";
 import Card from "react-bootstrap/Card";
-import "./style.css";
+import "./style.scss";
 const Home = ({ data, dataBr }) => {
     return (
-        <div>
+        <div id="home">
             <Hero />
             <h2 className="main-title"> best game this year pc</h2>
-            <div id="parent">
-                <Card id="mainimg" style={{ width: "13rem" }}>
+            <div className="main-card">
+                <Card className="img" style={{ width: "13rem" }}>
                     <Card.Img
                         variant="top"
                         src="https://m.media-amazon.com/images/M/MV5BNWM2ZjM5ZjgtYjgxMi00NGY2LTgxNTYtYmMzY2EyNTQwNjg1XkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_FMjpg_UX1000_.jpg"
                     />
                 </Card>
-                <Card id="firstchildren" style={{ width: "45rem" }}>
+                <Card className="contant-card" style={{ width: "45rem" }}>
                     <Card.Body>
-                        <Card.Title id="secondchildren">
+                        <Card.Title className="card-title">
                             <span>R</span>esident <span>E</span>vil 4
                         </Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">

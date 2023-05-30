@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./fav.css";
+import "./fav.scss";
 import { GrTrash } from "react-icons/gr";
 function Favourite() {
     const [data, setData] = useState([]);
@@ -28,7 +28,7 @@ function Favourite() {
     }, [refreshCall]);
     // console.log("this is data",data);
     return (
-        <div className="big-div container">
+        <div id="favorite" className="big-div container">
             <div className="row">
                 {data.length &&
                     data.map((item) => {
