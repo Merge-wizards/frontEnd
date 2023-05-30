@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import "./fav.css";
+import { GrTrash } from "react-icons/gr";
 function Favourite() {
     const [data, setData] = useState([]);
     const [refreshCall, setRefreshCall] = useState(false);
@@ -27,28 +28,38 @@ function Favourite() {
     }, [refreshCall]);
     // console.log("this is data",data);
     return (
-        <div className="row">
-            {data.length &&
-                data.map((item) => {
-                    return (
-                        <div key={item.id} className="col-4">
-                            <img src={item.thumbnail} className="c-image" />
-                            <div className="column">
-                                <h2>Title : {item.title}</h2>
-                                <h3>short description : </h3>
-                                <p>{item.short_description}</p>
+        <div className="big-div container">
+            <div className="row">
+                {data.length &&
+                    data.map((item) => {
+                        return (
+                            <div key={item.id} className="col-4">
+                                <div className="card">
+                                    <img
+                                        src={item.thumbnail}
+                                        className="c-image"
+                                    />
+                                    <div className="card-body">
+                                        <div className="column">
+                                            <h2>{item.title}</h2>
+                                            <p>{item.short_description}</p>
+                                        </div>
+                                        <div className="btns d-flex justify-content-center">
+                                            <button
+                                                className="btn btn-transparent "
+                                                onClick={() =>
+                                                    deleteFav(item.id)
+                                                }
+                                            >
+                                                <GrTrash size="50%" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="btns d-flex justify-content-center">
-                                <button
-                                    className="btn btn-danger "
-                                    onClick={() => deleteFav(item.id)}
-                                >
-                                    delete
-                                </button>
-                            </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
+            </div>
         </div>
     );
 }

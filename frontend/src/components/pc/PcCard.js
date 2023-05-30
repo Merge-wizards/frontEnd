@@ -18,49 +18,56 @@ const PcCard = ({ data }) => {
     const hasData = data.length > 0;
     const showNextButton = currentIndex <= data.length - 5;
     return (
-        <div>
-            <h3>Pc Games</h3>
-            <div>
-                <Row className="Row">
+        <div className="games">
+            <h3>
+                {" "}
+                <strong>Pc Games </strong>
+            </h3>
+
+            <div className="relative container">
+                <div className="row">
                     {data
                         .slice(0, 15)
                         .slice(currentIndex, currentIndex + 4)
                         .map((item, index) => {
                             return (
-                                <Link key={item.id} to={`/details/${item.id}`}>
-                                    <img
-                                        key={index}
-                                        src={item.thumbnail}
-                                        alt={"Image "}
-                                    />
-                                </Link>
+                                <div className="col-md-3">
+                                    <div>
+                                        <Link
+                                            key={item.id}
+                                            to={`/details/${item.id}`}
+                                        >
+                                            <img
+                                                className="img-fluid"
+                                                key={index}
+                                                src={item.thumbnail}
+                                                alt={"Image "}
+                                            />
+                                        </Link>
+                                    </div>
+                                </div>
                             );
                         })}
-                </Row>
-            </div>
-            {hasData && (
-                <div className="btn w-100">
-                    <button
-                        onClick={() => handleClick("prev")}
-                        disabled={currentIndex === 0}
-                        style={{ border: "0", backgroundColor: "transparent" }}
-                    >
-                        <GrLinkPrevious />
-                    </button>
-                    {showNextButton && (
-                        <button
-                            onClick={() => handleClick("next")}
-                            disabled={currentIndex === 4}
-                            style={{
-                                border: "0",
-                                backgroundColor: "transparent",
-                            }}
-                        >
-                            <GrLinkNext />
-                        </button>
+                    {hasData && (
+                        <div className="btn w-100 shapes">
+                            <button
+                                onClick={() => handleClick("prev")}
+                                disabled={currentIndex === 0}
+                            >
+                                <GrLinkPrevious />
+                            </button>
+                            {showNextButton && (
+                                <button
+                                    onClick={() => handleClick("next")}
+                                    disabled={currentIndex === 4}
+                                >
+                                    <GrLinkNext />
+                                </button>
+                            )}
+                        </div>
                     )}
                 </div>
-            )}
+            </div>
         </div>
     );
 };

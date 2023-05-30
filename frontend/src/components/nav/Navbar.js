@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 function Navbar({ games }) {
     const navigate = useNavigate();
     const [searchResult, setSearchResult] = useState([]);
@@ -54,8 +55,8 @@ function Navbar({ games }) {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/feedback" className="nav-link">
-                            Feedback
+                        <Link to="/about-us" className="nav-link">
+                            About us
                         </Link>
                     </li>
                     {/* <li className="nav-item dropdown">
