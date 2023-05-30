@@ -1,11 +1,70 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react';
+import { Button, Modal, Form } from 'react-bootstrap';
 
-function Feedback() {
+const FeedbackModal = () => {
+  const [show, setShow] = useState(false);
+  const [name, setName] = useState('');
+  const [feedback, setFeedback] = useState('');
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+  //   try {
+  //     const response = await axios.post('http://localhost:8002/feedback', {
+  //       name,
+  //       feedback,
+  //     });
+  //     console.log(response.data);
+  //     handleClose();
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  };
+
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Give Feedback
+      </Button>
 
-export default Feedback
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Feedback</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group controlId="name">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Form.Group>
+            
+            <Form.Group controlId="feedback">
+              <Form.Label>Feedback</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                placeholder="Enter your feedback"
+                value={feedback}
+                onChange={(e) => setFeedback(e.target.value)}
+              />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+};
+
+export default FeedbackModal;

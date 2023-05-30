@@ -1,19 +1,22 @@
-.Row {
-    gap: 275px;
-    width: 9%;
+.Row1 {
+    width: 25%;
     flex-wrap: nowrap;
-    padding: 20px;
 }
 
 .text{
-    margin: 20px;
+    padding-top: 2%;
+    margin-left: 5%;
+    font-size:50px
+
 }
-/* .btn{
+.bigDiv1{
+    display: flex
+}
+.btn{
    display: flex;
    position: relative;
    .btn2{
-       position: absolute;
-       right: 0;
-       top: 10px;
+       position: relative;
+     
    }
-} */
+} 
