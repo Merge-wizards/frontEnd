@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
-// import Browser from "../browser/Browser";
+import Browser from "../browser/Browser";
 
 import Hero from "../hero/Hero";
 function Details({ data, dataBr }) {
@@ -62,7 +62,7 @@ function Details({ data, dataBr }) {
                 </div>
             </div>
 
-            {/* {dataBr?.length > 0 && <Browser dataBr={dataBr} />} */}
+            {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
         </div>
     );
 }
