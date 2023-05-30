@@ -7,8 +7,7 @@ import Team from "../Team/Team";
 import Details from "../details/Details";
 import Favourite from "../favourite/Favourite";
 import Navbar from "../nav/Navbar";
-import Platform from "../plateform/Platform";
-import Category from "../category/Category";
+import GamesByType from "../GamesByType/GamesByType";
 import Footer from "../footer/Footer";
 function Router() {
     const [data, setData] = useState([]);
@@ -45,10 +44,13 @@ function Router() {
 
             <Routes>
                 <Route
-                    path="/category/:selectedCategory"
-                    element={<Category />}
+                    path="/category/:id"
+                    element={<GamesByType type="category" />}
                 />
-                <Route path="/plate/:selectedPlatform" element={<Platform />} />
+                <Route
+                    path="/plate/:id"
+                    element={<GamesByType type="platform" />}
+                />
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
                 <Route path="/about-us" element={<Team />} />

@@ -4,26 +4,47 @@ import Card from "react-bootstrap/Card";
 import "./style.scss";
 import { Link, useParams } from "react-router-dom";
 
-function Category() {
+function GamesByType({ type }) {
     const [showMore, setShowMore] = useState(false);
     const [actions, setActions] = useState([]);
 
-    const { selectedCategory } = useParams();
+    const { id } = useParams();
 
-    const category = () => {
-        axios
-            .get(`${process.env.REACT_APP_URL}/category`, {
-                params: {
-                    category: selectedCategory,
-                },
-            })
-            .then((res) => setActions(res.data))
-            .catch((err) => console.log(err));
+    const loadData = async () => {
+        try {
+            switch (type) {
+                case "platform":
+                    const { data: plateform } = await axios.get(
+                        `${process.env.REACT_APP_URL}/plate`,
+                        {
+                            params: {
+                                platform: id,
+                            },
+                        }
+                    );
+                    setActions(plateform);
+                    break;
+
+                case "category":
+                    const { data: category } = await axios.get(
+                        `${process.env.REACT_APP_URL}/category`,
+                        {
+                            params: {
+                                category: id,
+                            },
+                        }
+                    );
+                    setActions(category);
+                    break;
+            }
+        } catch (err) {
+            console.error(err);
+        }
     };
 
     useEffect(() => {
-        category();
-    }, [selectedCategory]);
+        loadData();
+    }, [id]);
     return (
         <div className="bigdiv">
             {actions &&
@@ -68,4 +89,4 @@ function Category() {
     );
 }
 
-export default Category;
+export default GamesByType;

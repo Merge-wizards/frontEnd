@@ -21,7 +21,6 @@ const Home = ({ data, dataBr }) => {
                             <span>R</span>esident <span>E</span>vil 4
                         </Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
-                            {" "}
                             <p>survival horror game</p>
                         </Card.Subtitle>
                         <Card.Text>
