@@ -17,3 +17,76 @@
     border-radius: 0;
     width: 70%;
 }
+/*.form-inline{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+  .navbar:hover{
+    color: #17a2b8;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .collapse{
+    justify-content: space-between;
+}
+.btn{
+    border-radius: 0;
+    width: 70%;
+}
+  
+  .navbar-toggler-icon {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #17a2b8;
+  }
+  
+  .dropdown-menu {
+    background-color: #343a40;
+  }
+  
+  .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .form-control {
+    background-color: #fff;
+    color: #343a40;
+    border-radius: 0;
+    width: 200%;
+  }
+  
+  .btn-outline-success {
+    color: #fff;
+    border-color: #17a2b8;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  */

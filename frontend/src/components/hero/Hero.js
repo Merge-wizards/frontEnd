@@ -33,7 +33,7 @@ const Hero = () => {
     <MDBCarousel showIndicators showControls fade >
       <div className='img1'>
     <MDBCarouselItem 
-      className='w-100 d-block hero'
+      className='w-100 d-block hero '
       itemId={1}
       src={img}
       alt='...'
@@ -44,7 +44,7 @@ const Hero = () => {
     </div>
 
     <MDBCarouselItem
-      className='w-100 d-block hero'
+      className='w-100 d-block hero '
       itemId={2}
       src={img2}
       alt='...'
@@ -54,7 +54,7 @@ const Hero = () => {
     </MDBCarouselItem>
 
     <MDBCarouselItem
-      className='w-100 d-block hero'
+      className='w-100 d-block hero '
       itemId={3}
       src={img3}
       alt='...'
@@ -63,7 +63,7 @@ const Hero = () => {
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </MDBCarouselItem>
     <MDBCarouselItem
-      className='w-100 d-block hero'
+      className='w-100 d-block hero '
       itemId={4}
       src={img4}
       alt='...'

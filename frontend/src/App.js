@@ -6,6 +6,8 @@ import Hero from './components/hero/Hero'
 import Navbar from './components/nav/Navbar'
 import PcCard from './components/pc/PcCard';
 import Team from './components/Team/team';
+import Feedback from './components/FeedBack/Feedback';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
     <PcCard/>
     <Browser/>
     <Team/>
+    <Feedback/>
     <Footer/>
     </>
   );
