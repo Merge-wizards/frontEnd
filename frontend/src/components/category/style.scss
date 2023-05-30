@@ -1,0 +1,14 @@
+.bigdiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+
+    .wrap {
+        width: 18rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+        
+        }
+ }

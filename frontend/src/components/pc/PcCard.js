@@ -40,7 +40,7 @@ const PcCard = ({ data }) => {
             </div>
             {hasData && (
                 <div className="btn w-100">
-                    <button
+                    <button className="btns"
                         onClick={() => handleClick("prev")}
                         disabled={currentIndex === 0}
                         style={{ border: "0", backgroundColor: "transparent" }}

@@ -71,10 +71,10 @@ const teamData = [
     photo: hamzaPhoto,
     paragraph: 'Experienced | Strategic | Full Stack Developer  ',
     socialMedia: [
-      { platform: 'GitHub', url: 'https://github.https://github.com/Hamzamt99/abdullah', icon: githubIcon },
-      { platform: 'LinkedIn', url: 'https://linkedin.com/in/abdullah', icon: linkedInIcon },
-      { platform: 'Facebook', url: 'https://facebook.com/abdullah', icon: facebookIcon },
-      { platform: 'Instagram', url: 'https://instagram.com/abdullah', icon: instagramIcon },
+      { platform: 'GitHub', url: 'https://github.com/Hamzamt99', icon: githubIcon },
+      { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/hamza-tamari-a98290229/', icon: linkedInIcon },
+      { platform: 'Facebook', url: 'https://www.facebook.com/hamza.tamari.54', icon: facebookIcon },
+      { platform: 'Instagram', url: 'https://instagram.com/hamza.tamari?igshid=MzRlODBiNWFlZA==', icon: instagramIcon },
     ],
   },
 ];

@@ -17,3 +17,9 @@
     border-radius: 0;
     width: 70%;
 }
+#dropdown-basic{
+    background-color:transparent;
+    width: 100%;
+    border: none;
+
+}
