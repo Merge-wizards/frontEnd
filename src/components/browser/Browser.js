@@ -34,7 +34,7 @@ const Browser = ({ dataBr }) => {
     const showNextButton = currentIndex <= dataBr.length - 5;
     return (
         <div className="games">
-            <h3>Browser Games</h3>
+            <h3>&nbsp;&nbsp;Browser Games</h3>
             <div className="relative container">
                 <div className="row">
                     {dataBr

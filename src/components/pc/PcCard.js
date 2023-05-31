@@ -21,7 +21,8 @@ const PcCard = ({ data }) => {
 
     return (
         <div className="games">
-            <h3>Pc Games</h3>
+            <h3 style={{ paddingLeft: "1%" }}>Pc Games</h3>
+
             <div className="relative container">
                 <div className="row">
                     {data

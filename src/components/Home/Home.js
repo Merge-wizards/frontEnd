@@ -7,7 +7,7 @@ const Home = ({ data, dataBr }) => {
     return (
         <div id="home">
             <Hero />
-            <h2 className="main-title"> best game this year pc</h2>
+            <h2 className="main-title"> Best game recommended </h2>
             <div className="main-card">
                 <Card className="img" style={{ width: "13rem" }}>
                     <Card.Img
