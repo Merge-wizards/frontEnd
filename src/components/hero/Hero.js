@@ -34,11 +34,7 @@ const Hero = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis
-                            interdum.
-                        </p>
+                        <h3>Home is where you are 'Player 1'.</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -48,11 +44,7 @@ const Hero = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                        </p>
+                        <h3>Eat. Sleep. Game. Repeat.</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -62,11 +54,10 @@ const Hero = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl
-                            consectetur.
-                        </p>
+                        <h3>
+                            I'm not a player. I'm a gamer. Players get chicks. I
+                            get achievements.
+                        </h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
