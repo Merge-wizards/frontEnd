@@ -31,7 +31,6 @@ function Details({ data, dataBr }) {
     };
     return (
         <div className="wrapper">
-            {/* <Hero /> */}
             <div>
                 <h2 className="details-title"> Details page</h2>
                 <img className="details-img" src={detailsImg}
@@ -45,7 +44,7 @@ function Details({ data, dataBr }) {
                         alt="no-pic"
                     />
                     <button
-                        className="btn btn-success"
+                        className="add-fav-button"
                         onClick={() => fetchFav()}
                     >
                         Send To favorite
@@ -59,12 +58,6 @@ function Details({ data, dataBr }) {
                         release date : {card[0].release_date}
                     </h4>
                     <p className="description">{card[0].short_description}</p>
-                    {/* <button
-                        className="btn btn-success"
-                        onClick={() => fetchFav()}
-                    >
-                        Send To favorite
-                    </button> */}
                 </div>
             </div>
             <div className="details-data">
