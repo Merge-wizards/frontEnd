@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import logo from '../../assets/logo.png'
 import Dropdown from "react-bootstrap/Dropdown";
 function Navbar({ games }) {
     const navigate = useNavigate();
@@ -37,7 +37,7 @@ function Navbar({ games }) {
     return (
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <Link className="navbar-brand" to="/">
-                Merge Wizards
+                <img src={logo} style={{width:'10rem', marginBottom:'-2rem', marginTop:'-2rem'}}/>
             </Link>
             <button
                 className="navbar-toggler"

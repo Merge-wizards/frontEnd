@@ -32,7 +32,7 @@ const PcCard = ({ data }) => {
               disabled={currentIndex === 0}
               style={{ border: '0', backgroundColor: 'black', width: '3rem' }}
             >
-              <GrLinkPrevious size="30px" filter="invert(100%)" />
+              <GrLinkPrevious size="30px" filter="invert(100%)" style={{paddingTop:'50%'}}/>
             </Button>
           </div>
         )}
