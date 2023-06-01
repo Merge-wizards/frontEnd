@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
 import Browser from "../browser/Browser";
+import detailsImg from "../../assets/details.jpg";
 
-import Hero from "../hero/Hero";
+// import Hero from "../hero/Hero";
 function Details({ data, dataBr }) {
     // console.log(data[0].id);
     const { id } = useParams();
@@ -30,7 +31,12 @@ function Details({ data, dataBr }) {
     };
     return (
         <div className="wrapper">
-            <Hero />
+            {/* <Hero /> */}
+            <div>
+                <h2 className="details-title"> Details page</h2>
+                <img className="details-img" src={detailsImg}
+                alt="no-pic"/>
+            </div>
             <div className="c-d">
                 <div className="img-div">
                     <img
@@ -61,9 +67,12 @@ function Details({ data, dataBr }) {
                     </button> */}
                 </div>
             </div>
-
+            <div className="details-data">
             {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
+            </div>
         </div>
     );
 }
 export default Details;
+
+
