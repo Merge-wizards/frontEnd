@@ -36,20 +36,20 @@ const Browser = ({ dataBr }) => {
       <h3 className="text">
         <strong>Browser Games</strong>
       </h3>
-      <div className="bigDiv1">
+      <div className="bigDiv2">
         {hasdataBr && (
-          <div className="btn">
+          <div className="btn" style={{marginRight:'2%', width:'3rem'}}>
             <Button
               onClick={() => handleClick('prev')}
               disabled={currentIndex === 0}
-              style={{ border: '0', backgroundColor: 'black', width: '3rem' }}
+              style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)', width: '3rem' }}
             >
-              <GrLinkPrevious size="30px" filter="invert(100%)" />
+              <GrLinkPrevious size="200px" filter="invert(100%)" />
             </Button>
           </div>
         )}
         <div>
-          <Row className="Row1">
+          <Row className="Row2">
             {dataBr
               .slice(currentIndex, currentIndex + 4)
               .map((item, index) => {
@@ -70,14 +70,14 @@ const Browser = ({ dataBr }) => {
           </Row>
         </div>
         {hasdataBr && (
-          <div className="btn" style={{ marginRight:'-25rem' }}>
+          <div className="btn" style={{  marginLeft:'15%', width:'3rem'  }}>
             {showNextButton && (
               <Button
                 onClick={() => handleClick('next')}
                 disabled={currentIndex + 4 >= dataBr.length}
-                style={{ border: '0', backgroundColor: 'black',width: '3rem' }}
+                style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)',width: '3rem' }}
               >
-                <GrLinkNext size="30px" filter="invert(100%)"  />
+                <GrLinkNext size="200px" filter="invert(100%)"  />
               </Button>
             )}
           </div>

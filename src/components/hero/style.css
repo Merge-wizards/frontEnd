@@ -9,18 +9,22 @@
 
  }
  .hs{
- /* background-color: black; */
- padding-left:50%;
- display:flex;
- position:absolute;
- top: -25rem;
- left: 9rem;
- }
+   background-color: rgba(0, 0, 0, 0.801);
+   font-size: 35px;
+   margin-right: -20%;
+   margin-left:50%;
+   display:flex;
+   position:absolute;
+   top: -750%;
+   left: 11%;
+   width: 50%;
+   justify-content: center;
+   }
 .search{
    display:flex;
    position:absolute;
-   top: 15rem;
-   left:55rem;
-   width: 40rem;
-   height: 3rem
+   top: 50%;
+   left:55%;
+   width: 40%;
+   height: 9%
 }
