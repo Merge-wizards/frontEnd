@@ -1,0 +1,30 @@
+.all{
+  background-color::rgba(0, 0, 0, 0.801);
+}
+.Row1 {
+    margin-left:-20rem;
+    width: 90%;
+    flex-wrap: nowrap;
+}
+
+.text{
+    color: white;
+    padding-top: 2%;
+    margin-left: 5%;
+    font-size:50px
+
+}
+.bigDiv1{
+    display: flex;
+    .zoom-out-card {
+        transition: transform 0.3s ease;
+      }
+      
+      .zoom-out-card:hover {
+        transform: scale(0.9);
+      }
+}
+.btn{
+   display: flex;
+   position: relative;
+} 
