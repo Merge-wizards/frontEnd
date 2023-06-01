@@ -1,7 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./fav.scss";
-import { GrTrash } from "react-icons/gr";
+
+
+
+
+
 function Favourite() {
     const [data, setData] = useState([]);
     const [refreshCall, setRefreshCall] = useState(false);
@@ -29,6 +33,14 @@ function Favourite() {
     // console.log("this is data",data);
     return (
         <div id="favorite" className="big-div container">
+            <div className="fav-title-div">
+                <h1 className="fav-title"> 
+                    Favorite page
+                </h1>
+                <img className="fav-img"
+                src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/steamworks_docs/english/Header_1.jpg"
+                alt="no-pic"/>
+            </div>
             <div className="row">
                 {data.length &&
                     data.map((item) => {
@@ -38,6 +50,7 @@ function Favourite() {
                                     <img
                                         src={item.thumbnail}
                                         className="c-image"
+                                        alt="no-pic"
                                     />
                                     <div className="card-body">
                                         <div className="column">
@@ -46,12 +59,12 @@ function Favourite() {
                                         </div>
                                         <div className="btns d-flex justify-content-center">
                                             <button
-                                                className="btn btn-transparent "
+                                                className="btn btn-transparent  "
                                                 onClick={() =>
                                                     deleteFav(item.id)
                                                 }
                                             >
-                                                <GrTrash size="50%" />
+                                                Remove from favorite
                                             </button>
                                         </div>
                                     </div>
