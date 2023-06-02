@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
@@ -11,6 +11,7 @@ function Details({ data, dataBr }) {
     const { id } = useParams();
     // console.log(id)
     let card;
+
     for (let i = 0; i < data.length; i++) {
         if (id == data[i].id) {
             card = data.filter((ele) => ele.id == id);
@@ -29,12 +30,19 @@ function Details({ data, dataBr }) {
             .then((result) => console.log(result.data))
             .catch((err) => console.log(err));
     };
+
+    useEffect(() => {
+        const pageHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+        const scrollToMiddle = Math.max(0, pageHeight / 2 - windowHeight / 2);
+        window.scrollTo(0, scrollToMiddle);
+    }, []);
+
     return (
         <div className="wrapper">
             <div>
                 <h2 className="details-title"> Details page</h2>
-                <img className="details-img" src={detailsImg}
-                alt="no-pic"/>
+                <img className="details-img" src={detailsImg} alt="no-pic" />
             </div>
             <div className="c-d">
                 <div className="img-div">
@@ -61,11 +69,10 @@ function Details({ data, dataBr }) {
                 </div>
             </div>
             <div className="details-data">
-            {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
+                {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
             </div>
         </div>
     );
 }
+
 export default Details;
-
-

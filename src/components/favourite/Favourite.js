@@ -1,14 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./fav.scss";
-
-
-
-
 
 function Favourite() {
     const [data, setData] = useState([]);
     const [refreshCall, setRefreshCall] = useState(false);
+
     const getFav = async () => {
         try {
             const result = await axios.get(`${process.env.REACT_APP_URL}/fav`);
@@ -17,6 +16,7 @@ function Favourite() {
             console.log(err);
         }
     };
+
     const deleteFav = async (id) => {
         try {
             await axios.delete(`${process.env.REACT_APP_URL}/delete/${id}`);
@@ -26,23 +26,23 @@ function Favourite() {
             console.error(err);
         }
     };
-    // deleteFav()
+
     useEffect(() => {
         getFav([]);
     }, [refreshCall]);
-    // console.log("this is data",data);
+
     return (
         <div id="favorite" className="big-div container">
             <div className="fav-title-div">
-                <h1 className="fav-title"> 
-                    Favorite page
-                </h1>
-                <img className="fav-img"
-                src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/steamworks_docs/english/Header_1.jpg"
-                alt="no-pic"/>
+                <h1 className="fav-title">Favorite page</h1>
+                <img
+                    className="fav-img"
+                    src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/steamworks_docs/english/Header_1.jpg"
+                    alt="no-pic"
+                />
             </div>
             <div className="row">
-                {data.length &&
+                {data.length > 0 &&
                     data.map((item) => {
                         return (
                             <div key={item.id} className="col-4">
@@ -59,12 +59,15 @@ function Favourite() {
                                         </div>
                                         <div className="btns d-flex justify-content-center">
                                             <button
-                                                className="btn btn-transparent  "
+                                                className="btn btn-transparent"
                                                 onClick={() =>
                                                     deleteFav(item.id)
                                                 }
                                             >
-                                                Remove from favorite
+                                                <FontAwesomeIcon
+                                                    icon={faTrash}
+                                                    className="trash-icon"
+                                                />
                                             </button>
                                         </div>
                                     </div>
