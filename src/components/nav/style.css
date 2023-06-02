@@ -20,10 +20,17 @@
 
 .btn svg {
     size: 25%;
- }
+}
 
-#dropdown-basic{
-    background-color:transparent;
+#dropdown-basic {
+    background-color: transparent;
     width: 100%;
     border: none;
+}
+.search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 2px;
+
+    width: 75px;
 }
