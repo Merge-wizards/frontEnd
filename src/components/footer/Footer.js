@@ -55,7 +55,7 @@ const Footer = () => {
                         </li>
                     </ul>
                     <p className="mb-0">
-                        &copy; {new Date().getFullYear()} Merged Wizards All
+                        &copy; {new Date().getFullYear()} Merge Wizards All
                         rights reserved.
                     </p>
                 </div>
