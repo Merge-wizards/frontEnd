@@ -104,6 +104,7 @@ function Navbar({ games }) {
                             About us
                         </Link>
                     </li>
+                   
                 </ul>
 
                 {/* <form
