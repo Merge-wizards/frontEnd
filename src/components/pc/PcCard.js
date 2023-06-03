@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Row } from "react-bootstrap";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

@@ -3,10 +3,12 @@ import Hero from "../hero/Hero";
 import PcCard from "../pc/PcCard";
 import Card from "react-bootstrap/Card";
 import "./style.scss";
+import Btn_For_Collection from '../btn_For_collection/Btn_For_Collection';
 const Home = ({ data, dataBr }) => {
     return (
         <div id="home">
             <Hero />
+            <Btn_For_Collection/>
             <h2 className="main-title"> Best game recommended </h2>
             <div className="main-card">
                 <Card className="img" style={{ width: "13rem" }}>

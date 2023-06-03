@@ -1,0 +1,36 @@
+.bdiv {
+    margin: auto;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    .wraps {
+        background-color: rgb(118, 118, 118);
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+    }
+    .imgYear{
+        height: 30vh;
+    }
+    .bodyCard{
+        width: 100%;
+        height: 28vh; 
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .font{
+        font-weight: 500;
+    }
+    .cardTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
