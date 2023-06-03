@@ -11,7 +11,7 @@ import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 
 const Footer = () => {
     return (
-        <MDBFooter className="bg-secondary text-white text-center">
+        <MDBFooter className="bg-dark text-white text-center ">
             <MDBContainer className="p-4">
                 <MDBRow>
                     <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
@@ -24,17 +24,17 @@ const Footer = () => {
                     <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
                         <h5 className="text-uppercase">Pages</h5>
                         <ul className="list-unstyled mb-0">
-                            <li>
+                            <li id="hi">
                                 <a href="/" className="text-white">
                                     Home
                                 </a>
                             </li>
-                            <li>
+                            <li id="hi">
                                 <a href="./favourite" className="text-white">
                                     Favourite
                                 </a>
                             </li>
-                            <li>
+                            <li id="hi">
                                 <a href="./about-us" className="text-white">
                                     About us
                                 </a>
@@ -44,7 +44,7 @@ const Footer = () => {
                     <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
                         <h5 className="text-uppercase mb-0">Categories</h5>
                         <ul className="list-unstyled">
-                            <li>
+                            <li id="hi">
                                 <a
                                     href="./category/action"
                                     className="text-white"
@@ -52,7 +52,7 @@ const Footer = () => {
                                     Action
                                 </a>
                             </li>
-                            <li>
+                            <li id="hi">
                                 <a
                                     href="./category/shooter"
                                     className="text-white"
@@ -60,7 +60,7 @@ const Footer = () => {
                                     Shooter
                                 </a>
                             </li>
-                            <li>
+                            <li id="hi">
                                 <a
                                     href="./category/survival"
                                     className="text-white"
@@ -68,7 +68,7 @@ const Footer = () => {
                                     Survival
                                 </a>
                             </li>
-                            <li>
+                            <li id="hi">
                                 <a
                                     href="./category/racing"
                                     className="text-white"
@@ -80,10 +80,7 @@ const Footer = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
-            <div
-                className="text-center p-3"
-                style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-            >
+            <div className="text-center p-3">
                 <ul className="list-inline mb-0">
                     <li className="list-inline-item">
                         <a

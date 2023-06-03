@@ -60,30 +60,27 @@
 .add-fav-button {
     margin-top: 2%;
     margin-left: 60%;
-    /* border-radius: 20px; */
+
     border: 0;
     width: 35%;
     padding: 1%;
     background-color: transparent;
-    /* color: #fff ; */
-}
-/* 
-.add-fav-button:hover{
-    background-color: #85c0ddf2;
-    width: 15%;
-    border-radius:50%;
-} */
-.heart-icon {
-    filter: invert(100%);
-    /* color: white; */
 }
 
 .heart-icon:hover {
-    filter: invert(85%) sepia(7%) saturate(2071%) hue-rotate(191deg)
-        brightness(93%) contrast(85%);
+    background-color: #f60606;
+    transition: 0.7s;
 }
-.heart-icon:active {
-    color: #85c0ddf2; /* Color on click */
+.heart-icon {
+    background-color: #5a0404;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+.heart-icon:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s; /* Color on click */
 }
 
 .details-title {
