@@ -10,7 +10,7 @@ const Abc = () => {
     <div>
       <TeamHero />
       <ImageWithTitle/>
-      <Services />
+     
       <Team />
       <ContactUs />
     </div>
