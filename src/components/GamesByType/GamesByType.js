@@ -15,7 +15,7 @@ function GamesByType({ type }) {
             switch (type) {
                 case "platform":
                     const { data: plateform } = await axios.get(
-                        `http://localhost:3/plate`,
+                        `http://localhost:3002/plate`,
                         {
                             params: {
                                 platform: id,
@@ -27,7 +27,7 @@ function GamesByType({ type }) {
 
                 case "category":
                     const { data: category } = await axios.get(
-                        `http://localhost:3/category`,
+                        `http://localhost:3002/category`,
                         {
                             params: {
                                 category: id,

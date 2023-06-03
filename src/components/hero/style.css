@@ -1,7 +1,7 @@
 .section{
-   background-color: black;
+   background-color: rgba(0, 0, 0, 0.960);
    height: 50%;
-   background-image: url("../../assets/bg-game2.jpg" );
+   /* background-image: url("../../assets/bg-game2.jpg" ); */
    background-repeat: repeat;
 }
 .hero{
@@ -9,16 +9,19 @@
 
  }
  .hs{
+   font-family: "Audiowide", sans-serif;
+    font-weight: 700;
    background-color: rgba(0, 0, 0, 0.801);
-   font-size: 35px;
+   font-size: 50px;
    margin-right: -20%;
    margin-left:50%;
    display:flex;
    position:absolute;
-   top: -750%;
+   top: -1000%;
    left: 11%;
    width: 50%;
    justify-content: center;
+   color: red
    }
 .search{
    display:flex;

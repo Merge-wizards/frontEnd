@@ -30,7 +30,7 @@ const PcCard = ({ data }) => {
             <Button
               onClick={() => handleClick('prev')}
               disabled={currentIndex === 0}
-              style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)', width: '3rem' }}
+              style={{ border: '0',  backgroundColor: 'rgba(0, 0, 0, 0.829)',  width: '4rem' }}
             >
               <GrLinkPrevious size="200px" filter="invert(100%)" style={{paddingTop:'50%'}}/>
             </Button>
@@ -63,9 +63,9 @@ const PcCard = ({ data }) => {
               <Button
                 onClick={() => handleClick('next')}
                 disabled={currentIndex + 4 >= data.length}
-                style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)',  width: '3rem' }}
+                style={{ border: '0', backgroundColor: 'rgba(0, 0, 0, 0.829)',  width: '4rem' }}
               >
-                <GrLinkNext size="200px" filter="invert(100%)"  />
+                <GrLinkNext size="200px" filter="invert(100%)" />
               </Button>
             )}
           </div>

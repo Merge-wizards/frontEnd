@@ -6,17 +6,8 @@ import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 const Browser = ({ dataBr }) => {
-    // const [dataBr, setdataBr] = useState([]);
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    // const dataBr = () => {
-    //     axios.get(`${process.env.REACT_APP_URL}/browser`).then(res => setdataBr(res.dataBr)).catch(err => console.log(err))
-    // }
-    // useEffect(() => {
-    //     dataBr([])
-    // }, []);
-
     const handleClick = (direction) => {
         if (direction === "prev" && currentIndex !== 0) {
             setCurrentIndex((prevIndex) => prevIndex - 1);
@@ -24,16 +15,12 @@ const Browser = ({ dataBr }) => {
             setCurrentIndex((nextIndex) => nextIndex + 1);
         }
     };
-    // const renderImages = () => {
-    //     return dataBr.slice(0,15).slice(currentIndex, currentIndex + 4)
-    //         .map((item, index) => (<Link><img key={index} src={item.thumbnail} alt={`Image ${index + 1}`}/></Link>));
-    // };
 
     const hasdataBr = dataBr.length > 0;
     const showNextButton = currentIndex <= dataBr.length - 5;
     return (
         <div className='all2'>
-      <h3 className="text">
+      <h3 className="text2">
         <strong>Browser Games</strong>
       </h3>
       <div className="bigDiv2">
@@ -42,7 +29,7 @@ const Browser = ({ dataBr }) => {
             <Button
               onClick={() => handleClick('prev')}
               disabled={currentIndex === 0}
-              style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)', width: '3rem' }}
+              style={{ border: '0',  backgroundColor: 'rgba(0, 0, 0, 0.829)',  width: '4rem'}}
             >
               <GrLinkPrevious size="200px" filter="invert(100%)" />
             </Button>
@@ -75,7 +62,7 @@ const Browser = ({ dataBr }) => {
               <Button
                 onClick={() => handleClick('next')}
                 disabled={currentIndex + 4 >= dataBr.length}
-                style={{ border: '0', backgroundColor: 'rgba(245, 222, 179, 0.329)',width: '3rem' }}
+                style={{ border: '0',  backgroundColor: 'rgba(0, 0, 0, 0.829)',  width: '4rem'}}
               >
                 <GrLinkNext size="200px" filter="invert(100%)"  />
               </Button>

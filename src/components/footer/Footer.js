@@ -5,6 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 const Footer = () => {
   return (
     <footer className="footer bg-dark text-light">
+      <br/>
       <div className="container">
         <div className="row">
 

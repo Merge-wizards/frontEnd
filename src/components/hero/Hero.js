@@ -60,8 +60,7 @@ const Hero = ({games}) => {
                     />
                     <Carousel.Caption>
                         <h3 className="hs">
-                            I'm not a player. I'm a gamer. Players get chicks. I
-                            get achievements.
+                            I'm not a player. I'm a gamer. Players get chicks. I get achievements.
                         </h3>
                     </Carousel.Caption>
                 </Carousel.Item>
