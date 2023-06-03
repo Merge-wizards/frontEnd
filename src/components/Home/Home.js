@@ -2,21 +2,36 @@ import Browser from "../browser/Browser";
 import Hero from "../hero/Hero";
 import PcCard from "../pc/PcCard";
 import Card from "react-bootstrap/Card";
+import Btn_For_Collection from '../btn_For_collection/Btn_For_Collection'
 import "./style.scss";
-import Btn_For_Collection from '../btn_For_collection/Btn_For_Collection';
+// <<<<<<< HEAD
+// import Btn_For_Collection from '../btn_For_collection/Btn_For_Collection';
+// const Home = ({ data, dataBr }) => {
+//     return (
+//         <div id="home">
+//             <Hero />
+//             
+//             <h2 className="main-title"> Best game recommended </h2>
+//             <div className="main-card">
+//                 <Card className="img" style={{ width: "13rem" }}>
+//                     <Card.Img
+// =======
 const Home = ({ data, dataBr }) => {
     return (
         <div id="home">
-            <Hero />
+            <Hero games={[...data, ...dataBr]}/>
             <Btn_For_Collection/>
-            <h2 className="main-title"> Best game recommended </h2>
             <div className="main-card">
-                <Card className="img" style={{ width: "13rem" }}>
+            <h2 className="main-title"> Best game recommended </h2>
+            <div className="card-in">
+                <Card className="img" style={{ width: "26rem" }}>
                     <Card.Img
+                    className="imgC"
                         variant="top"
                         src="https://m.media-amazon.com/images/M/MV5BNWM2ZjM5ZjgtYjgxMi00NGY2LTgxNTYtYmMzY2EyNTQwNjg1XkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_FMjpg_UX1000_.jpg"
                     />
                 </Card>
+{/* <<<<<<< HEAD
                 <Card className="contant-card" style={{ width: "45rem" }}>
                     <Card.Body>
                         <Card.Title className="card-title">
@@ -24,6 +39,14 @@ const Home = ({ data, dataBr }) => {
                         </Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
                             <p>survival horror game</p>
+======= */}
+                <Card className="contant-card" style={{ width: "45rem", height:'22rem' , backgroundColor:"rgba(0, 0, 0, 0.568)", color:'white'}}>
+                    <Card.Body>
+                        <Card.Title className="card-title">
+                            <span style={{fontSize:'60px'}}>R</span>esident <span style={{fontSize:'60px'}}>E</span>vil 4
+                        </Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">
+                            <h2 style={{color:'white'}}>survival horror game</h2>
                         </Card.Subtitle>
                         <Card.Text>
                             SURVIVAL IS JUST THE BEGINNING...Resident Evil 4 is
@@ -39,6 +62,9 @@ const Home = ({ data, dataBr }) => {
                     </Card.Body>
                 </Card>
             </div>
+
+            </div>
+
             {data?.length > 0 && <PcCard data={data} />}
             {dataBr?.length > 0 && <Browser dataBr={dataBr} />}
         </div>

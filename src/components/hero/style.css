@@ -1,10 +1,26 @@
 .section{
-   background-color: aqua;
+   background-color: black;
+   height: 50%;
+   background-image: url("../../assets/bg-game2.jpg" );
+   background-repeat: repeat;
 }
 .hero{
   width: 50px;
-  height: 90vh;
  }
- .img1{
- background-color: aqua;
+ .hs{
+ /* background-color: black; */
+ padding-left:50%;
+ display:flex;
+ position:absolute;
+ top: -300%;
+ left: 9rem;
  }
+.search{
+   display:flex;
+   position:absolute;
+   top: 18%;
+   left:55rem;
+   width: 40rem;
+   height: 3rem
+}
+

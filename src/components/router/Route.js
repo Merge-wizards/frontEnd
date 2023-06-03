@@ -14,6 +14,7 @@ import Year2017 from "../collection/Year2015_2020";
 import Year2020_2023 from '../collection/Year2020_2023';
 import Upcoming from "../upcoming/Upcoming";
 import Hero_Year from '../heroYear/Hero_Year'
+
 function Router() {
     const [data, setData] = useState([]);
     const [Brdata, setBrData] = useState([]);
@@ -58,14 +59,13 @@ function Router() {
                 />
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
-                <Route path="/about-us" element={<Team />} />
                 <Route path="/favourite" element={<Favourite />} />
-                <Route path="/2010-2015" element={[<Hero_Year/>,<Year2010_2015 />]} />
-                <Route path="/2015-2020" element={[<Hero_Year/>,<Year2017 />]} />
-                <Route path="/2020-2022" element={[<Hero_Year/>,<Year2020_2023/>]} /> 
-                <Route path="/Upcoming" element={[<Hero_Year/>,<Upcoming />]} />
+                <Route path="/2010-2015" element={[<Hero_Year />, <Year2010_2015 />]} />
+                <Route path="/2015-2020" element={[<Hero_Year />, <Year2017 />]} />
+                <Route path="/2020-2022" element={[<Hero_Year />, <Year2020_2023 />]} />
+                <Route path="/Upcoming" element={[<Hero_Year />, <Upcoming />]} />
                 <Route
-                
+
                     path="/"
                     element={<Home data={data} dataBr={Brdata} />}
                 />

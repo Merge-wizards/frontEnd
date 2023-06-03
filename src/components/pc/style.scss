@@ -1,46 +1,114 @@
-.Row {
-    width: 9%;
-    flex-wrap: nowrap;
-    padding: 20px;
-}
+// // <<<<<<< HEAD
+// // .Row {
+// //     width: 9%;
+// //     flex-wrap: nowrap;
+// //     padding: 20px;
+// // }
 
-.text {
-    margin: 20px;
-}
+// // .text {
+// //     margin: 20px;
+// // }
 
-.relative {
-    position: relative;
-}
-.shapes {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 70px;
-}
+// // .relative {
+// //     position: relative;
+// // }
+// // .shapes {
+// //     position: absolute;
+// //     display: flex;
+// //     justify-content: space-between;
+// //     top: 70px;
+// // }
 
-.shapes button {
-    width: 40px;
-    height: 50px;
-    background-color: #0a0509af;
-}
+// // .shapes button {
+// //     width: 40px;
+// //     height: 50px;
+// //     background-color: #0a0509af;
+// // }
 
-.shapes button svg {
-    filter: invert(1);
-}
-.container {
-    max-width: 100% !important;
-}
+// // .shapes button svg {
+// //     filter: invert(1);
+// // }
+// // .container {
+// //     max-width: 100% !important;
+// // }
 
-.games {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+// // .games {
+// //     margin-top: 30px;
+// //     margin-bottom: 30px;
+// // }
 
-// .footer {
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
+// // // .footer {
+// // //     position: fixed;
+// // //     bottom: 0;
+// // //     width: 100%;
+// // // }
+// // .team-card:last-child {
+// //     margin-bottom: 100px;
+// // }
+// // =======
+// .all1{
+//   background-color:rgba(0, 0, 0, 0.801);
 // }
-.team-card:last-child {
-    margin-bottom: 100px;
+// .Row1 {
+//     margin-left:-20rem;
+//     width: 90%;
+//     flex-wrap: nowrap;
+// }
+
+// .text{
+//     color: white;
+//     padding-top: 2%;
+//     margin-left: 5%;
+//     font-size:50px
+
+// }
+// .bigDiv1{
+//     display: flex;
+//     .zoom-out-card {
+//         transition: transform 0.3s ease;
+//       }
+      
+//       .zoom-out-card:hover {
+//         transform: scale(0.9);
+//       }
+// }
+// .btn{
+//    display: flex;
+//    position: relative;
+// } 
+
+.all1{
+  background-color:rgba(0, 0, 0, 0.801);
 }
+.Row1 {
+    width: 90%;
+    flex-wrap: nowrap;
+}
+
+.text{
+    // color: white;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.671);
+    padding-top: 2%;
+    margin-left: 5%;
+    font-size:50px
+
+}
+.bigDiv1{
+    display: flex;
+    width: 85%;
+    flex-wrap: nowrap;
+    padding: 2%;
+    .zoom-out-card {
+        transition: transform 0.3s ease;
+      }
+      
+      .zoom-out-card:hover {
+        transform: scale(0.9);
+      }
+}
+.btn{
+   display: flex;
+   width: 1%;
+   } 

@@ -15,7 +15,9 @@ function GamesByType({ type }) {
             switch (type) {
                 case "platform":
                     const { data: plateform } = await axios.get(
+
                         `${process.env.REACT_APP_URL}/plate`,
+
                         {
                             params: {
                                 platform: id,
@@ -28,6 +30,7 @@ function GamesByType({ type }) {
                 case "category":
                     const { data: category } = await axios.get(
                         `${process.env.REACT_APP_URL}/category`,
+
                         {
                             params: {
                                 category: id,
@@ -65,9 +68,9 @@ function GamesByType({ type }) {
                                         {showMore
                                             ? item.short_description
                                             : `${item.short_description.substring(
-                                                  0,
-                                                  50
-                                              )}`}
+                                                0,
+                                                50
+                                            )}`}
 
                                         <button
                                             className="btn"

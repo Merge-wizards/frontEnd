@@ -2,26 +2,49 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+// <<<<<<< HEAD
 
+// import Dropdown from "react-bootstrap/Dropdown";
+// function Navbar({ games }) {
+//     const navigate = useNavigate();
+//     const [searchResult, setSearchResult] = useState([]);
+
+//     const searchHandler = (text) => {
+//         const result = games.filter((e) =>
+//             e.title.toLowerCase().includes(text.toLowerCase())
+//         );
+
+//         setSearchResult(result);
+//     };
+
+//     const sumbitHandler = (e) => {
+//         e.preventDefault();
+//         if (searchResult.length === 1) {
+//             navigate(`/details/${searchResult[0].id}`);
+//         }
+//     };
+// =======
+import logo from '../../assets/logo.png'
 import Dropdown from "react-bootstrap/Dropdown";
 function Navbar({ games }) {
     const navigate = useNavigate();
-    const [searchResult, setSearchResult] = useState([]);
+    // const [searchResult, setSearchResult] = useState([]);
 
-    const searchHandler = (text) => {
-        const result = games.filter((e) =>
-            e.title.toLowerCase().includes(text.toLowerCase())
-        );
+    // const searchHandler = (text) => {
+    //     const result = games.filter((e) =>
+    //         e.title.toLowerCase().includes(text.toLowerCase())
+    //     );
 
-        setSearchResult(result);
-    };
+    //     setSearchResult(result);
+    // };
 
-    const sumbitHandler = (e) => {
-        e.preventDefault();
-        if (searchResult.length === 1) {
-            navigate(`/details/${searchResult[0].id}`);
-        }
-    };
+    // const sumbitHandler = (e) => {
+    //     e.preventDefault();
+    //     if (searchResult.length === 1) {
+    //         navigate(`/details/${searchResult[0].id}`);
+    //     }
+    // };
+
 
     const categoires = [
         { link: "/category/action", name: "Action" },
@@ -35,9 +58,13 @@ function Navbar({ games }) {
         { link: "/plate/browser", name: "Browser" },
     ];
     return (
-        <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark" >
             <Link className="navbar-brand" to="/">
+{/* <<<<<<< HEAD
                 Merge Wizards
+======= */}
+                <img src={logo} style={{width:'10rem', marginBottom:'-2rem', marginTop:'-2rem'}}/>
+
             </Link>
             <button
                 className="navbar-toggler"
@@ -114,7 +141,8 @@ function Navbar({ games }) {
                     </li>
                 </ul>
 
-                <form
+                {/* <form
+>>>>>>> f6692be4a0920e61ba838227bba04fd75711acb9
                     onSubmit={sumbitHandler}
                     className="form-inline my-2 my-lg-0"
                 >
@@ -139,7 +167,9 @@ function Navbar({ games }) {
                                 );
                             })}
                     </datalist>
-                </form>
+
+                </form> */}
+
             </div>
         </nav>
     );

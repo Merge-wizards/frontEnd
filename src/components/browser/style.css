@@ -1,0 +1,33 @@
+.all2{
+  background-color:rgba(0, 0, 0, 0.801);
+  padding-bottom: 3%
+}
+.Row2 {
+    width: 90%;
+    flex-wrap: nowrap;
+}
+
+.text2{
+  font-family: "Audiowide", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 0, 0, 0.671);
+    padding-top: 2%;
+    margin-left: 5%;
+    font-size:50px
+
+}
+.bigDiv2{
+    display: flex;
+    width: 85%;
+    .zoom-out-card {
+        transition: transform 0.3s ease;
+      }
+      
+      .zoom-out-card:hover {
+        transform: scale(0.9);
+      }
+}
+.btn{
+   display: flex;
+   position: relative;
+} 

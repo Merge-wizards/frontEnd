@@ -9,7 +9,6 @@ const Footer = () => {
         <div className="row">
 
         </div>
-        <hr />
         <div className="text-center">
           <ul className="list-inline mb-0">
             <li className="list-inline-item">
