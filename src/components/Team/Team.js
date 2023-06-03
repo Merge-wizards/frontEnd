@@ -1,5 +1,8 @@
 import React from "react";
 
+
+
+
 import abdullahPhoto from "../../assets/abdullah.jpg";
 import alaaPhoto from "../../assets/alaa.jpg";
 import ayahPhoto from "../../assets/ayah.png";
@@ -11,7 +14,14 @@ import githubIcon from "../../assets/githubIcon.png";
 import instagramIcon from "../../assets/instagramIcon.png";
 import linkedInIcon from "../../assets/linkedinIcon.png";
 
+
+
+
 import "./Team.css";
+
+
+
+
 //import { GrLinkedin } from 'react-icons/gr';
 
 const teamData = [
@@ -159,7 +169,12 @@ const teamData = [
 
 const Team = () => {
     return (
+
+        
         <div className="team-container">
+       
+       <h2 className="team-heading">Meet Our Awesome Team</h2>
+       
             {teamData.map((member) => (
                 <div key={member.id} className="team-card">
                     <img src={member.photo} alt={member.name} />
@@ -176,17 +191,93 @@ const Team = () => {
                                 <img
                                     src={account.icon}
                                     alt={account.platform}
+
                                 />
                             </a>
+                          
                         ))}
+                        
+
+                        </div>
+                     
+
                     </div>
-                </div>
+                    
+
             ))}
+             
+            
         </div>
+        
+     
     );
+    
 };
 
+
 export default Team;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*import React from 'react';
 
