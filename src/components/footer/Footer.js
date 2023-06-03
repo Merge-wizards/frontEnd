@@ -25,19 +25,19 @@ const Footer = () => {
                         <h5 className="text-uppercase">Pages</h5>
                         <ul className="list-unstyled mb-0">
                             <li id="hi">
-                                <a href="/" className="text-white">
+                                <Link to="/" className="text-white">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li id="hi">
-                                <a href="./favourite" className="text-white">
+                                <Link to="/favourite" className="text-white">
                                     Favourite
-                                </a>
+                                </Link>
                             </li>
                             <li id="hi">
-                                <a href="./about-us" className="text-white">
+                                <Link to="/about-us" className="text-white">
                                     About us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </MDBCol>
@@ -65,7 +65,7 @@ const Footer = () => {
                                     to="./category/survival"
                                     className="text-white"
                                 >
-                                    SurvivalS
+                                    Survival
                                 </Link>
                             </li>
                             <li id="hi">
