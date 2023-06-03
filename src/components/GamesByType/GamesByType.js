@@ -71,24 +71,27 @@ function GamesByType({ type }) {
                                 </Link>
                                 <Card.Body>
                                     <Card.Title>{item.title}</Card.Title>
-
-                                    <Card.Text className="h6">
-                                        {isExpanded
-                                            ? item.short_description
-                                            : `${item.short_description.substring(
-                                                  0,
-                                                  50
-                                              )}`}
-
-                                        <button
-                                            className="btn"
-                                            onClick={() => toggleExpand(index)}
-                                        >
+                                    <div className="main-card-div">
+                                        <Card.Text className="h6">
                                             {isExpanded
-                                                ? "Show less"
-                                                : "Show more"}
-                                        </button>
-                                    </Card.Text>
+                                                ? item.short_description
+                                                : `${item.short_description.substring(
+                                                      0,
+                                                      50
+                                                  )}`}
+
+                                            <button
+                                                className="btn"
+                                                onClick={() =>
+                                                    toggleExpand(index)
+                                                }
+                                            >
+                                                {isExpanded
+                                                    ? "Show less"
+                                                    : "Show more"}
+                                            </button>
+                                        </Card.Text>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </div>

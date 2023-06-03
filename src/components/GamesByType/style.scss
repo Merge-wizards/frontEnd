@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 1%;
     min-height: 100vh;
+    background-color: #393e46;
     .wrap {
         width: 18rem;
         display: flex;
@@ -12,9 +13,19 @@
         height: 54vh;
     }
     .btn {
-        width: 100%;
+        width: 55%;
         display: flex;
-
+        background-color: aqua;
         justify-content: center;
+        margin-top: 3%;
+    }
+    .card-body {
+        background-color: #212b30;
+        color: white;
+    }
+    .main-card-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
