@@ -44,9 +44,9 @@ function Details({ data, dataBr }) {
     return (
         <div className="wrapper">
 
-            <Hero />
+     
             <Btn_For_Collection/>
-=======
+
             <div>
                 <h2 className="details-title"> Details page</h2>
                 <img className="details-img" src={detailsImg} alt="no-pic" />
