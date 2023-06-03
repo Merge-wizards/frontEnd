@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./style.css";
 import axios from "axios";
 import Browser from "../browser/Browser";
-
+import Btn_For_Collection from '../btn_For_collection/Btn_For_Collection'
 import Hero from "../hero/Hero";
 function Details({ data, dataBr }) {
     // console.log(data[0].id);
@@ -31,6 +31,7 @@ function Details({ data, dataBr }) {
     return (
         <div className="wrapper">
             <Hero />
+            <Btn_For_Collection/>
             <div className="c-d">
                 <div className="img-div">
                     <img
