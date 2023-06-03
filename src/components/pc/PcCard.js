@@ -26,21 +26,17 @@ const PcCard = ({ data }) => {
             </h3>
             <div className="bigDiv1">
                 {hasData && (
-                    <div className="btn" style={{ width: "3rem" }}>
+                    <div className="btnPc">
                         <Button
                             onClick={() => handleClick("prev")}
                             disabled={currentIndex === 0}
                             style={{
                                 border: "0",
-                                backgroundColor: "rgba(0, 0, 0, 0.829)",
+                                backgroundColor: "rgba(112,128,144,0.829)",
                                 width: "4rem",
                             }}
                         >
-                            <GrLinkPrevious
-                                size="200px"
-                                filter="invert(100%)"
-                                style={{ paddingTop: "50%" }}
-                            />
+                            <GrLinkPrevious size="25px" filter="invert(100%)" />
                         </Button>
                     </div>
                 )}
@@ -66,21 +62,19 @@ const PcCard = ({ data }) => {
                     </Row>
                 </div>
                 {hasData && (
-                    <div className="btn" style={{ width: "3rem" }}>
+                    <div className="btnPc">
                         {showNextButton && (
                             <Button
                                 onClick={() => handleClick("next")}
                                 disabled={currentIndex + 4 >= data.length}
                                 style={{
                                     border: "0",
-                                    backgroundColor: "rgba(0, 0, 0, 0.829)",
+
+                                    backgroundColor: "rgba(112,128,144,0.829)",
                                     width: "4rem",
                                 }}
                             >
-                                <GrLinkNext
-                                    size="200px"
-                                    filter="invert(100%)"
-                                />
+                                <GrLinkNext size="25px" filter="invert(100%)" />
                             </Button>
                         )}
                     </div>

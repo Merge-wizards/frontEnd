@@ -43,19 +43,20 @@
     .btn-transparent {
         background-color: red;
         color: white;
-        width: 24%;
+        width: 25%;
         margin: 5% 0 0 0;
+        height: 5vh;
     }
-    .btns{
+    .btns {
         border-radius: 10px;
     }
-    .btns2:hover{
-        color:#000000;
+    .btns2:hover {
+        color: #000000;
         transition: 0.7s;
     }
-    .btns2:active{
+    .btns2:active {
         outline-color: transparent;
-        outline-style:solid;
+        outline-style: solid;
         box-shadow: 0 0 0 4px #000000;
         transition: 0.7s;
     }
