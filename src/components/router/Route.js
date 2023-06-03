@@ -9,6 +9,8 @@ import Favourite from "../favourite/Favourite";
 import Navbar from "../nav/Navbar";
 import GamesByType from "../GamesByType/GamesByType";
 import Footer from "../footer/Footer";
+import ContactUs from "../ContactUs/ContactUs";
+import Abc from "../Abc/Abc";
 function Router() {
     const [data, setData] = useState([]);
     const [Brdata, setBrData] = useState([]);
@@ -53,8 +55,9 @@ function Router() {
                 />
                 <Route path="/about-us" element={<Team />} />
                 <Route path="/feedback" element={<Feedback />} />
-                <Route path="/about-us" element={<Team />} />
+                <Route path="/about-us" element={<ContactUs />} />
                 <Route path="/favourite" element={<Favourite />} />
+                <Route path="/contact-us" element={<Abc />} />
                 <Route
                     path="/"
                     element={<Home data={data} dataBr={Brdata} />}
