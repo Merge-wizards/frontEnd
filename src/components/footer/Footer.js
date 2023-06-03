@@ -6,7 +6,7 @@ import {
     faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.scss";
-
+import { Link } from "react-router-dom";
 import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 
 const Footer = () => {
@@ -45,36 +45,36 @@ const Footer = () => {
                         <h5 className="text-uppercase mb-0">Categories</h5>
                         <ul className="list-unstyled">
                             <li id="hi">
-                                <a
-                                    href="./category/action"
+                                <Link
+                                    to="./category/action"
                                     className="text-white"
                                 >
                                     Action
-                                </a>
+                                </Link>
                             </li>
                             <li id="hi">
-                                <a
-                                    href="./category/shooter"
+                                <Link
+                                    to="./category/shooter"
                                     className="text-white"
                                 >
                                     Shooter
-                                </a>
+                                </Link>
                             </li>
                             <li id="hi">
-                                <a
-                                    href="./category/survival"
+                                <Link
+                                    to="./category/survival"
                                     className="text-white"
                                 >
-                                    Survival
-                                </a>
+                                    SurvivalS
+                                </Link>
                             </li>
                             <li id="hi">
-                                <a
-                                    href="./category/racing"
+                                <Link
+                                    to="./category/racing"
                                     className="text-white"
                                 >
                                     Racing
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </MDBCol>
