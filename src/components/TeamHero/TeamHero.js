@@ -55,7 +55,7 @@ export default TeamHero;*/
 import React from 'react';
 import styled from 'styled-components';
 
-import letsgetintouch from '../../assets/letsgetintouch.jpg';
+import letsgetintouch from '../../assets/letsgetintouch1.png';
 
 const TeamHero = () => {
   return (
@@ -71,12 +71,12 @@ const HeroContainer = styled.div`
   align-items: center;
   background-color: #000;
   width: 100%;
-  height: 100%; /* Adjust the value as per your requirement */
+  height: 50vh; 
 `;
 
 const TeamPhoto = styled.img`
   width:100%;
-  height: 100%;
+  height: 60vh;
   object-fit: cover;
 `;
 

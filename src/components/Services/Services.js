@@ -66,7 +66,7 @@ const Services = () => {
 
 export default Services;*/
 
-
+/*
 import React from "react";
 import { FaCode, FaDesktop, FaUsers, FaBriefcase, FaChartLine, FaCog } from "react-icons/fa";
 import "./Services.css";
@@ -121,4 +121,61 @@ const Services = () => {
   );
 };
 
+export default Services;*/
+
+import React from "react";
+import { FaGamepad, FaStar, FaHeart, FaListAlt, FaSearch, FaNewspaper } from "react-icons/fa";
+import "./Services.css";
+
+const Services = () => {
+  const servicesData = [
+    {
+      icon: <FaGamepad />,
+      title: "Game Reviews and Recommendations",
+      description: "Get detailed reviews and personalized game recommendations.",
+    },
+    {
+      icon: <FaStar />,
+      title: "Ratings and Reviews",
+      description: "Rate and review your favorite games and read reviews from other users.",
+    },
+    {
+      icon: <FaHeart />,
+      title: "Favorite Games",
+      description: "Create a personalized list of favorite games and easily manage them.",
+    },
+    {
+      icon: <FaListAlt />,
+      title: "Games Sorted by Category",
+      description: "Discover games based on different categories and genres.",
+    },
+    {
+      icon: <FaSearch />,
+      title: "Game Search",
+      description: "Search for games based on titles, genres, or other criteria.",
+    },
+    {
+      icon: <FaNewspaper />,
+      title: "News and Updates",
+      description: "Stay updated with the latest news and updates from the gaming world.",
+    },
+  ];
+
+  return (
+    <div className="services-container">
+      <h2 className="services-title">Our Services</h2>
+      <div className="services-grid">
+        {servicesData.map((service, index) => (
+          <div key={index} className="service">
+            <div className="service-icon">{service.icon}</div>
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default Services;
+

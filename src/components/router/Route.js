@@ -53,11 +53,11 @@ function Router() {
                     path="/plate/:id"
                     element={<GamesByType type="platform" />}
                 />
-                <Route path="/about-us" element={<Team />} />
+                
                 <Route path="/feedback" element={<Feedback />} />
-                <Route path="/about-us" element={<ContactUs />} />
+                <Route path="/about-us" element={<Abc />} />
                 <Route path="/favourite" element={<Favourite />} />
-                <Route path="/contact-us" element={<Abc />} />
+                
                 <Route
                     path="/"
                     element={<Home data={data} dataBr={Brdata} />}

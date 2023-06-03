@@ -4,10 +4,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+//import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import connectWithUsImage from '../../assets/connectWithUsImage.png';
-import letsgetintouch from '../../assets/letsgetintouch.jpg';
-import TeamHero from '../TeamHero/TeamHero';
+
 
 
 const ContactUsForm = () => {
@@ -20,7 +19,7 @@ const ContactUsForm = () => {
 
         
       
-
+<PageContainer>
       <FormContainer>
         
       
@@ -40,38 +39,37 @@ const ContactUsForm = () => {
           </FormField>
           <Button type="submit">Send Message</Button>
           
-          <SocialIcons>
-            <a href="#">
-              <FaFacebook />
-            </a>
-            <a href="#">
-              <FaTwitter />
-            </a>
-            <a href="#">
-              <FaInstagram />
-            </a>
-          </SocialIcons>
+        
         </Form>
         <ConnectWithUsImage src={connectWithUsImage} alt="Connect with Us" />
       </FormContainer>
-    
+      </PageContainer>
   );
 };
 
+const PageContainer = styled.div`
+  background-color: black;
+  padding: 20px;
+`;
+
 const FormContainer = styled.div`
+  
   display: flex;
   background-color: #000;
   border-radius: 8px;
-  border: 2px solid #ff0000;
-  padding: 20px;
+  border: 2px solid #7E1717;
+  padding: 10px; 
+  max-width: 800px;
+  margin: 0 auto; 
 `;
+
 
 const Form = styled.form`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: #ff0000;
+  color: #7E1717;
 `;
 
 const FormField = styled.div`
@@ -81,33 +79,33 @@ const FormField = styled.div`
 const Label = styled.label`
   font-weight: bold;
   margin-bottom: 8px;
-  color: #ff0000;
+  color: #7E1717;
 `;
 
 const InputNeon = styled.input`
   width: 100%;
   padding: 10px;
-  background-color: #000;
-  color: #ff0000;
-  border: 1px solid #ff0000;
+  background-color: #fff;
+  color: #7E1717;
+  border: 1px solid #7E1717;
   border-radius: 4px;
-  box-shadow: 0 0 5px #ff0000;
+  box-shadow: 0 0 5px #7E1717;
 `;
 
 const TextareaNeon = styled.textarea`
   width: 100%;
   padding: 10px;
-  background-color: #000;
-  color: #ff0000;
-  border: 1px solid #ff0000;
+  background-color: #fff;
+  color: #7E1717;
+  border: 1px solid #7E1717;
   border-radius: 4px;
-  box-shadow: 0 0 5px #ff0000;
+  box-shadow: 0 0 5px #7E1717;
 `;
 
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: #ff0000;
+  background-color: #7E1717;
   color: #000;
   border: none;
   border-radius: 4px;

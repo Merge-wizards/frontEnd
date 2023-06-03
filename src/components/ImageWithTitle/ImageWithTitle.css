@@ -1,0 +1,22 @@
+.Container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .Title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
