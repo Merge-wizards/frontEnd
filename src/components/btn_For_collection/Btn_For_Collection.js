@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import './style.scss';
 function Btn_For_Collection() {
-  // const [eve, setEve] = useState([]);
-  // const event = (e) => {
-  // console.log(e.target.value)
-  //   setEve(e.target.value)
-  // }
 
   return (
     <div className="collectionBtn">
