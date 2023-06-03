@@ -20,6 +20,11 @@ function Navbar({ games }) {
         e.preventDefault();
         if (searchResult.length === 1) {
             navigate(`/details/${searchResult[0].id}`);
+            window.scrollTo(
+                0,
+                document.documentElement.scrollHeight / 2 -
+                    window.innerHeight / 2
+            );
         }
     };
 
@@ -118,27 +123,38 @@ function Navbar({ games }) {
                     onSubmit={sumbitHandler}
                     className="form-inline my-2 my-lg-0"
                 >
-                    <input
-                        className="form-control"
-                        list="datalistOptions"
-                        id="exampleDataList"
-                        placeholder="Type to search..."
-                        onInput={(e) => searchHandler(e.target.value)}
-                    />
-                    <datalist id="datalistOptions">
-                        {searchResult.length > 0 &&
-                            searchResult.map((e, index) => {
-                                return (
-                                    <option
-                                        key={index}
-                                        value={e.title}
-                                        onClick={() =>
-                                            navigate(`/details/${e.id}`)
-                                        }
-                                    />
-                                );
-                            })}
-                    </datalist>
+                    <div className="input-group">
+                        <input
+                            className="form-control"
+                            list="datalistOptions"
+                            id="exampleDataList"
+                            placeholder="Search for any game"
+                            onInput={(e) => searchHandler(e.target.value)}
+                        />
+                        <datalist id="datalistOptions">
+                            {searchResult.length > 0 &&
+                                searchResult.map((e, index) => {
+                                    return (
+                                        <option
+                                            key={index}
+                                            value={e.title}
+                                            onClick={() =>
+                                                navigate(`/details/${e.id}`)
+                                            }
+                                        />
+                                    );
+                                })}
+                        </datalist>
+                        <div className="input-group-append">
+                            <button
+                                className="btn btn-primary search-button"
+                                type="submit"
+                                onClick={sumbitHandler}
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </nav>

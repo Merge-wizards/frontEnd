@@ -20,3 +20,13 @@ export const Mood = styled.img`
     width: 2.5vw;
 `;
 export const FORM = styled.form``;
+.search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Optional: Add custom styles for the input field */
+.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
