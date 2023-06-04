@@ -7,7 +7,7 @@ import abdullahPhoto from "../../assets/abdullah.jpg";
 import alaaPhoto from "../../assets/alaa.jpg";
 import ayahPhoto from "../../assets/ayah.png";
 import basharPhoto from "../../assets/bashar.jpg";
-import hamzaPhoto from "../../assets/hamza.jpg";
+import Hamza from '../../assets/Hamza.jpeg'
 
 import facebookIcon from "../../assets/facebookIcon.png";
 import githubIcon from "../../assets/githubIcon.png";
@@ -140,7 +140,7 @@ const teamData = [
     {
         id: 5,
         name: "Hamza Tamari",
-        photo: hamzaPhoto,
+        photo: Hamza ,
         paragraph: "Experienced | Strategic | Full Stack Developer  ",
         socialMedia: [
             {
