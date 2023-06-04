@@ -136,7 +136,7 @@ function Navbar({ games }) {
                     </Dropdown>
                     <li className="nav-item">
                         <Link to="/about-us" className="nav-link">
-                            About us
+                            About Us
                         </Link>
                     </li>
                    

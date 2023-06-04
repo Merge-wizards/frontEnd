@@ -9,15 +9,15 @@ const ImageWithTitle = () => {
 
   return (
     <AppContainer>
-    <Container>
-      <ImageWrapper>
-        <Image src={imageSrc} alt="Image" />
-      </ImageWrapper>
-      <ContentWrapper>
-        <Title>{title}</Title>
-        <Paragraph>{paragraph}</Paragraph>
-      </ContentWrapper>
-    </Container>
+      <Container>
+        <ImageWrapper>
+          <Image src={imageSrc} alt="Image" />
+        </ImageWrapper>
+        <ContentWrapper>
+          <Title>{title}</Title>
+          <Paragraph>{paragraph}</Paragraph>
+        </ContentWrapper>
+      </Container>
     </AppContainer>
   );
 };
@@ -31,35 +31,32 @@ const AppContainer = styled.div`
 
 const Container = styled.div`
 display: flex;
-background-color: black;
-color: white;
-align-items: center;
-padding: 20px;
-border: 2px solid #7E1717;
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-max-width: 800px; /* Adjust the maximum width as per your requirements */
-margin: 0 auto; /* Center the container horizontally */
+    background-color: black;
+    color: white;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 8px;
 `;
 
 const ImageWrapper = styled.div`
-  flex: 0 0 auto;
-  margin-right: 20px;
-  margin-top: 70px;
-  margin-left: 100px;
+  margin:5%
 `;
 
 const Image = styled.img`
-  width: 200px;
-  height: auto;
+  width: 100%;
   margin-bottom:50px;
 `;
 
 const ContentWrapper = styled.div`
   flex: 1;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const Title = styled.h2`
+ padding:20px;
   font-size: 28px;
   margin-bottom: 20px;
   margin-left: 50px;
