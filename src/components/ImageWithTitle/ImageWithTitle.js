@@ -3,7 +3,7 @@ import styled from "styled-components";
 import imageSrc from "../../assets/image2.png";
 
 const ImageWithTitle = () => {
-  const title = " Welcome at Merge Wizards!";
+  const title = " About Merge Wizards!";
   const paragraph =
     "Merge your gaming adventures with knowledge and experience at Merge Wizards. Discover a world of game reviews that will enchant and guide you through the realm of gaming. Unlock the power of informed decisions and embark on epic gaming quests with confidence.";
 
