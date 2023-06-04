@@ -12,25 +12,29 @@
         align-items: center;
         margin: 5%;
     }
-    .imgYear{
+    .imgYear {
         height: 30vh;
     }
-    .bodyCard{
+    .bodyCard {
         width: 100%;
-        height: 28vh; 
+        height: 28vh;
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        background-color: #b0c4de;
     }
-    .font{
+    .font {
         font-weight: 500;
     }
-    .cardTitle{
+    .cardTitle {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .star-icon {
+        color: yellow;
     }
 }

@@ -1,33 +1,30 @@
-.all2{
-  background-color:rgba(0, 0, 0, 0.801);
-  padding-bottom: 3%
+.all2 {
+    background-color: rgba(0, 0, 0, 0.801);
 }
 .Row2 {
-    width: 90%;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
+    overflow-x: hidden;
 }
 
-.text2{
-  font-family: "Audiowide", sans-serif;
-  font-weight: 700;
-  color: rgba(255, 0, 0, 0.671);
+.text2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.671);
     padding-top: 2%;
     margin-left: 5%;
-    font-size:50px
-
+    font-size: 50px;
 }
-.bigDiv2{
+.bigDiv2 {
     display: flex;
-    width: 85%;
-    .zoom-out-card {
-        transition: transform 0.3s ease;
-      }
-      
-      .zoom-out-card:hover {
-        transform: scale(0.9);
-      }
+
+    justify-content: space-between;
+    padding: 2%;
 }
-.btn{
-   display: flex;
-   position: relative;
-} 
+.btnBr {
+    display: flex;
+    height: 10vh;
+    align-self: center;
+}

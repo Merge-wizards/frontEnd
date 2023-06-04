@@ -1,10 +1,10 @@
-.collectionBtn{
+.collectionBtn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 70px;
 
-    .button-c{
+    .button-c {
         background-color: #555555;
         border-radius: 8px;
         color: rgb(255, 255, 255);
@@ -14,20 +14,18 @@
         display: inline-block;
         font-size: 16px;
         transition: 0.7s;
-        
     }
     .button-c:hover {
-        background-color:#000000;
+        background-color: #000000;
         transition: 0.7s;
     }
     .button-c:focus {
         outline-color: transparent;
-        outline-style:solid;
+        outline-style: solid;
         box-shadow: 0 0 0 4px #5a01a7;
         transition: 0.7s;
     }
     .button-c:active {
         background-color: #02a3cb;
     }
-    
 }

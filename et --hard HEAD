@@ -1,0 +1,258 @@
+[33mcommit 3a5f252155ff3481058363d556dc290adf35c270[m[33m ([m[1;36mHEAD -> [m[1;32mmainv2[m[33m, [m[1;31morigin/mainv2[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Sat Jun 3 14:38:37 2023 +0300
+
+    Update Details.js
+
+[33mcommit 163640cbc0772b469f9ce335ab9fc494822f6b84[m
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Sat Jun 3 14:37:30 2023 +0300
+
+    Update Details.js
+
+[33mcommit 5ef769a394a96707263aaeb0a73ab53b7b866f5a[m
+Merge: bd46e33 26de8cd
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Sat Jun 3 14:33:21 2023 +0300
+
+    Merge pull request #12 from Merge-wizards/buttons
+    
+    button
+
+[33mcommit 26de8cdb6e776314626831b86695210e28db23e5[m[33m ([m[1;31morigin/buttons[m[33m)[m
+Merge: baf9253 bd46e33
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Sat Jun 3 14:32:36 2023 +0300
+
+    Merge branch 'main' into buttons
+
+[33mcommit baf92531003b7e4669479461aa7a668ec22a22bf[m
+Author: Hamzamt99 <tamarihamza4@gmail.com>
+Date:   Sat Jun 3 11:28:25 2023 +0000
+
+    button
+
+[33mcommit bd46e333c80470214e450bc7308372b866992fa4[m
+Merge: 7bcfcde 9068020
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Fri Jun 2 03:15:25 2023 +0300
+
+    Merge pull request #11 from Merge-wizards/mainv2
+    
+    footer , delete icon , search icon
+
+[33mcommit 906802029138b8e6d89cea64f7f30026dc2b9728[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Fri Jun 2 03:14:27 2023 +0300
+
+    footer , delete icon , search icon
+
+[33mcommit 7bcfcde6627652a060954d5d843c67323984e042[m
+Merge: b4c89d4 4273b6e
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Thu Jun 1 22:04:36 2023 +0300
+
+    Merge pull request #10 from Merge-wizards/mainv2
+    
+    Mainv2
+
+[33mcommit 4273b6e123cc631f11b1b925661779c905e178c0[m
+Merge: 2b813cd e82874b
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Thu Jun 1 22:03:12 2023 +0300
+
+    Merge pull request #9 from Merge-wizards/hamza
+    
+    Merge pull request #5 from Merge-wizards/main
+
+[33mcommit 2b813cde8ff3ac433f5e7f1e55b4766dd7dde9db[m
+Merge: b4c89d4 eb3ab7c
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Thu Jun 1 21:16:09 2023 +0300
+
+    Merge pull request #7 from Merge-wizards/abdullah
+    
+    Abdullah
+
+[33mcommit eb3ab7ccbdb58bb61998c21295afce968ef95c29[m[33m ([m[1;31morigin/abdullah[m[33m, [m[1;32mabdullah[m[33m)[m
+Author: abdullah-aljoulani <abdullahaljoulani@gmail.com>
+Date:   Thu Jun 1 17:56:17 2023 +0000
+
+    fixing the fav-button and footer in fav page
+
+[33mcommit 16bc35f2432c8c556bb873c7c8fe57dd31ae54d5[m
+Author: abdullah-aljoulani <abdullahaljoulani@gmail.com>
+Date:   Thu Jun 1 17:29:26 2023 +0000
+
+    fixing the footer in fav page
+
+[33mcommit a28a992311d62c8181e100ee709c5e37e84ed3ed[m
+Author: abdullah-aljoulani <abdullahaljoulani@gmail.com>
+Date:   Thu Jun 1 16:18:41 2023 +0000
+
+    styling fav page
+
+[33mcommit 82222c62f457a4b1e32b2d601219f1eb033b651c[m
+Author: abdullah-aljoulani <abdullahaljoulani@gmail.com>
+Date:   Thu Jun 1 12:58:17 2023 +0000
+
+    styling details page
+
+[33mcommit b4c89d4eb532259997d42273b83967e3fc0d610b[m[33m ([m[1;31morigin/ContactUs[m[33m, [m[1;31morigin/AboutUs[m[33m)[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 11:15:51 2023 +0300
+
+    Spaces
+
+[33mcommit 10fb5aae1dc4871465457851942aed165e9fe719[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 09:45:55 2023 +0300
+
+    Dummy text Updated
+
+[33mcommit f836efab05ddb1b5a1fe305762a3f7c53e7042d5[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 02:36:14 2023 +0300
+
+    add browser
+
+[33mcommit ccc2ce9ae624a4a3ec384d27ccc93664e8973821[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 02:22:26 2023 +0300
+
+    Platform component
+
+[33mcommit bbfb4baa75753b6de77aad7288c8ffab8a794e60[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 02:01:48 2023 +0300
+
+    Update style
+
+[33mcommit 2f906d4e3c4d6b0653c68389ce5689fe4e9b56fb[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 01:37:37 2023 +0300
+
+    fix: files ordering
+
+[33mcommit 5ee8c68c46f0735845c2d70dd8e3dbbecd8b356c[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 01:36:54 2023 +0300
+
+    fix: files ordering
+
+[33mcommit 6da841bed22543f1412e2c358b60c71a7e14f759[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Wed May 31 00:04:16 2023 +0300
+
+    update the footer
+
+[33mcommit 13eefdf239ddbc492ea933fc7bbe0d629d5b0058[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Tue May 30 23:17:18 2023 +0300
+
+    The Category and the platform have been done
+
+[33mcommit e82874b29219a1821f90c1e41fe51e30dcb5e58a[m[33m ([m[1;31morigin/hamza[m[33m)[m
+Merge: f2ad7c0 f102941
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Tue May 30 22:25:41 2023 +0300
+
+    Merge pull request #5 from Merge-wizards/main
+    
+    merge hamza to main
+
+[33mcommit f102941c4b13c5fd62ff77c6465e50f5126d232b[m
+Merge: b213723 f2ad7c0
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Tue May 30 22:25:34 2023 +0300
+
+    Merge branch 'hamza' into main
+
+[33mcommit b2137234801ca429612ff9f8fe49e1176dff2855[m
+Merge: 6a397c5 b187955
+Author: BasharIrani23 <129655131+BasharIrani23@users.noreply.github.com>
+Date:   Tue May 30 22:13:50 2023 +0300
+
+    Merge pull request #4 from Merge-wizards/BasharUpdate
+    
+    fav page , footer , search
+
+[33mcommit b187955e1b06cab61b39a3f625a5abad40816465[m[33m ([m[1;31morigin/BasharUpdate[m[33m, [m[1;32mBasharUpdate[m[33m)[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Tue May 30 21:52:48 2023 +0300
+
+    fav page , footer , search
+
+[33mcommit f2ad7c0a6292c484d344c456bc7c20b8932ba253[m
+Author: Hamzamt99 <tamarihamza4@gmail.com>
+Date:   Tue May 30 18:52:42 2023 +0000
+
+    done
+
+[33mcommit 6a397c52c4a6f4be2a2053c3a68214933daeee5c[m
+Merge: 01b2ada fdbc59c
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Tue May 30 12:29:28 2023 +0300
+
+    Merge pull request #3 from Merge-wizards/AboutUs
+    
+    About US page
+
+[33mcommit fdbc59c3ed11ceff0b4949d76593ca232834a02b[m
+Merge: 9ec5e4d 01b2ada
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Tue May 30 12:29:20 2023 +0300
+
+    Merge branch 'main' into AboutUs
+
+[33mcommit 9ec5e4dea8b3773c814f57ba80d684b9e472eeb0[m
+Author: NSALAA9 <alaansairat99@gmail.com>
+Date:   Tue May 30 04:41:30 2023 +0000
+
+    About US page
+
+[33mcommit 01b2ada34ae6cd07883cdb6317cb98d503c7b1ac[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Tue May 30 02:56:13 2023 +0300
+
+    Merge Wiazrds updates
+
+[33mcommit 5920de7a37215c1ede915021602ffb22223f68e5[m
+Author: Basharirani23 <super_boshbosh@hotmail.com>
+Date:   Tue May 30 02:42:00 2023 +0300
+
+    fixes: delete fav + add fav + style in differents pages
+    features : search bar
+
+[33mcommit e1066807a8d6f4b762987f870d16a5792495fd86[m
+Merge: c39afef e3bd61c
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Mon May 29 22:36:22 2023 +0300
+
+    Merge pull request #2 from Merge-wizards/Home
+    
+    editing the pages
+
+[33mcommit e3bd61c1bee7d2abdd93bbbc78e7eec6607d786e[m[33m ([m[1;31morigin/Home[m[33m)[m
+Author: Hamzamt99 <tamarihamza4@gmail.com>
+Date:   Mon May 29 19:34:49 2023 +0000
+
+    editing the pages
+
+[33mcommit c39afefc110376fb6bc8fb1830624c2d6a07720a[m
+Merge: b41097c d319791
+Author: Hamza Tamari <87302604+Hamzamt99@users.noreply.github.com>
+Date:   Sun May 28 21:28:29 2023 +0300
+
+    Merge pull request #1 from Merge-wizards/Home
+    
+    doing the home
+
+[33mcommit d31979183374cc59d98df7e3512e3406361db2fb[m
+Author: Hamzamt99 <tamarihamza4@gmail.com>
+Date:   Sun May 28 18:27:49 2023 +0000
+
+    doing the home
+
+[33mcommit b41097ccd6e4af0095e16390e38adbbbb5911b53[m
+Author: Hamza Tam

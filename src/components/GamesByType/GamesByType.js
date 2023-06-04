@@ -5,7 +5,7 @@ import "./style.scss";
 import { Link, useParams } from "react-router-dom";
 
 function GamesByType({ type }) {
-    const [showMore, setShowMore] = useState(false);
+    const [expandedItems, setExpandedItems] = useState([]);
     const [actions, setActions] = useState([]);
 
     const { id } = useParams();
@@ -14,23 +14,20 @@ function GamesByType({ type }) {
         try {
             switch (type) {
                 case "platform":
-                    const { data: plateform } = await axios.get(
-
+                    const { data: platform } = await axios.get(
                         `${process.env.REACT_APP_URL}/plate`,
-
                         {
                             params: {
                                 platform: id,
                             },
                         }
                     );
-                    setActions(plateform);
+                    setActions(platform);
                     break;
 
                 case "category":
                     const { data: category } = await axios.get(
                         `${process.env.REACT_APP_URL}/category`,
-
                         {
                             params: {
                                 category: id,
@@ -48,10 +45,21 @@ function GamesByType({ type }) {
     useEffect(() => {
         loadData();
     }, [id]);
+
+    const toggleExpand = (index) => {
+        setExpandedItems((prevExpandedItems) => {
+            const updatedExpandedItems = [...prevExpandedItems];
+            updatedExpandedItems[index] = !updatedExpandedItems[index];
+            return updatedExpandedItems;
+        });
+    };
+
     return (
         <div className="bigdiv">
             {actions &&
                 actions.slice(0, 20).map((item, index) => {
+                    const isExpanded = expandedItems[index] || false;
+
                     return (
                         <div key={index}>
                             <Card className="wrap">
@@ -63,26 +71,27 @@ function GamesByType({ type }) {
                                 </Link>
                                 <Card.Body>
                                     <Card.Title>{item.title}</Card.Title>
+                                    <div className="main-card-div">
+                                        <Card.Text className="h6">
+                                            {isExpanded
+                                                ? item.short_description
+                                                : `${item.short_description.substring(
+                                                      0,
+                                                      50
+                                                  )}`}
 
-                                    <Card.Text className="h6">
-                                        {showMore
-                                            ? item.short_description
-                                            : `${item.short_description.substring(
-                                                0,
-                                                50
-                                            )}`}
-
-                                        <button
-                                            className="btn"
-                                            onClick={() =>
-                                                setShowMore(!showMore)
-                                            }
-                                        >
-                                            {showMore
-                                                ? "Show less"
-                                                : "Show more"}
-                                        </button>
-                                    </Card.Text>
+                                            <button
+                                                className="btn"
+                                                onClick={() =>
+                                                    toggleExpand(index)
+                                                }
+                                            >
+                                                {isExpanded
+                                                    ? "Show less"
+                                                    : "Show more"}
+                                            </button>
+                                        </Card.Text>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </div>
